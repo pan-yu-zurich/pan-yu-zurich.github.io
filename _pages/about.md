@@ -17,10 +17,10 @@ redirect_from:
 
 Welcome! I am a PhD student in Management and Economics at the University of Zurich, focusing on sports and experimental economics. 
 
-# 🔥 News
+# 📰 News
 - *2024 October*: I will present at the UZH Business Research Seminar on October 22.
 
-# 📝 Research 
+# 🔬 Research 
 
 ## Working Papers
 
@@ -29,7 +29,7 @@ Welcome! I am a PhD student in Management and Economics at the University of Zur
   <div class='paper-box-image'>
     <div>
       <div class="badge">Working Paper</div>
-      <img src='images/paper4_1.png' alt="sym" width="500" height="300"> <br />
+      <img src='images/paper4_1.png' alt="sym" width="500" height="300"> 
       <img src='images/paper4_2.png' alt="sym" width="500" height="300">
     </div>
   </div>
@@ -87,7 +87,7 @@ Welcome! I am a PhD student in Management and Economics at the University of Zur
 </div>
 </div>
 
-# 💬 Presentations
+# 🎤  Presentations
 
 ## 2024
 - (Scheduled on October 22) UZH Business Research Seminar
@@ -98,11 +98,11 @@ Welcome! I am a PhD student in Management and Economics at the University of Zur
 ## 2023
 - 18th BiGSEM Doctoral Workshop on Economics and Management
 
-# 📖 Education
+# 🎓 Education
 - *Current*: PhD student in Management and Economics, University of Zurich
 - *2022*: M.A. in Economics, Minor in Data Science, University of Zurich
 
-# 💻 Professional Experience
+# 👨‍💼 Professional Experience
 - *2023 Spring*: Short-Term Consultant (STC), World Bank
 - *2022 Spring*: Research Assistant, ETH Zurich
 
@@ -110,5 +110,7 @@ Welcome! I am a PhD student in Management and Economics at the University of Zur
 - *2024*: UZH GRC Short Grant 2250 CHF
 - *2023*: UZH GRC Travel Grant 540 CHF
 
-# 📫 Contact
-Email: yu.pan@business.uzh.ch
+# 📧 Contact
+Email: <a href="mailto:yu.pan@business.uzh.ch">yu.pan@business.uzh.ch</a>
+
+For potential collaboration, coffee chat, or Bachelor/Master thesis supervision, feel free to reach out.
