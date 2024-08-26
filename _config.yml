@@ -23,8 +23,8 @@ google_scholar_stats_use_cdn : true
 author:
   name             : "Yu Pan"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "UZH"
-  location         : "GuangDong, China"
+  bio              : "University of Zurich"
+  location         : "Zurich / GuangDong"
   employer         :
   pubmed           : 
   #googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
@@ -43,7 +43,7 @@ author:
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : # e.g., "linkedin username"
+  linkedin         : "https://www.linkedin.com/in/pan-sports-econ/"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
