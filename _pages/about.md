@@ -15,7 +15,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 <span class='anchor' id='about-me'></span>
 
-# Welcome!
+# 👋 Welcome!
 
 I am a PhD student in Management and Economics at the University of Zurich. 
 
@@ -118,3 +118,13 @@ My research interests include sports economics, experimental economics, and the 
 Email: <a href="mailto:yu.pan@business.uzh.ch">yu.pan@business.uzh.ch</a>
 
 For potential collaboration, coffee chat, or Bachelor/Master thesis supervision, feel free to reach out.
+
+# 🏃‍♂️ Activities
+
+When I'm not in the office, I enjoy staying active through various outdoor and sports activities:
+
+- 🥾 [Hiking](https://www.tiktok.com/@swiss_pan) & 小潘亡命瑞士
+- ⛷️ Skiing
+- 🧗 Climbing
+- 🏸 [Badminton]([https://www.swiss-badminton.ch/](https://www.swiss-badminton.ch/ranking/player.aspx?id=41813&player=5070355)
+
