@@ -24,6 +24,22 @@ Welcome! I am a PhD student in Management and Economics at the University of Zur
 
 ## Working Papers
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Working Paper</div><img src='images/paper3.png' alt="sym" width="500" height="300"></div></div>
+<div class='paper-box-text' markdown="1">
+
+*When Robots Think and Feel: Will Trust Disappear?* (Draft available upon request)
+
+[Yu Pan](https://pan-yu-zurich.github.io/), [Carlos Gomez-Gonzalez](https://www.carlosgomez-gonzalez.com/), [Gwen-Jiro Clochard]([https:](https://sites.google.com/view/gwen-jiro-clochard/home)), [Helmut M. Dietl](https://www.business.uzh.ch/de/research/professorships/som/Team/helmutdietl.html)
+
+- Abstract: Previously limited to mechanical tasks, robots are increasingly performing thinking and feeling tasks. But how these roles requiring higher agency impact perceived trustworthiness remains unclear. We examine when and why humans trust robots, involving 2,309 Prolific participants and using advanced AI-generated content to create realistic video simulations. We capture clear treatment effects by randomly replacing human staff with robots performing identical tasks. Study 1 reveals that robots performing mechanical tasks are trusted more than those performing thinking/feeling tasks, while scenarios combining human staff and robots are perceived as more trustworthy than those with robots only. Study 2 shows that different types of robots are perceived with different levels of trustworthiness, but the previous effects remain true for both robots. Study 3 demonstrates that human supervision significantly increases trust, particularly for robots performing thinking/feeling tasks and in environments without human staff. These findings underscore the importance of perceived agency and human supervision in shaping trust, providing critical insights for the design and implementation of robotic systems.
+
+</div>
+</div>
+
+
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Working Paper</div><img src='images/paper2.png' alt="sym" width="500" height="300"></div></div>
 <div class='paper-box-text' markdown="1">
 
