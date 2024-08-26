@@ -27,7 +27,7 @@ Welcome! I am a PhD student in Management and Economics at the University of Zur
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Working Paper</div><img src='images/paper1.png' alt="sym" width="500" height="300"></div></div>
 <div class='paper-box-text' markdown="1">
 
-1. Agricultural Practices, Organized Workers and Female Political Empowerment: Evidence from Italian Mondine
+Agricultural Practices, Organized Workers and Female Political Empowerment: Evidence from Italian Mondine
 
 [Luca Bagnato](https://lucabagnato.github.io/), [Yu Pan](https://pan-yu-zurich.github.io/), [Miriam Venturini](https://miriamventurini.github.io/#about)
 
