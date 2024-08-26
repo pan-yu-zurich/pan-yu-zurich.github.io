@@ -24,10 +24,23 @@ Welcome! I am a PhD student in Management and Economics at the University of Zur
 
 ## Working Papers
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Working Paper</div><img src='images/paper2.png' alt="sym" width="500" height="300"></div></div>
+<div class='paper-box-text' markdown="1">
+
+*The Superstar Effect on Perceived Performance in Professional Football: An Online Experiment* (Draft available upon request)
+
+[Yu Pan](https://pan-yu-zurich.github.io/), [Marco Henriques Pereira](https://www.business.uzh.ch/de/research/professorships/som/Team/Marco-Henriques-Pereira.html), [Carlos Gomez-Gonzalez](https://www.carlosgomez-gonzalez.com/), [Helmut M. Dietl](https://www.business.uzh.ch/de/research/professorships/som/Team/helmutdietl.html)
+
+- Abstract: We conduct a novel experiment to investigate whether football superstars consistently receive more favorable evaluations than non-superstars. Engaging 500 participants from Prolific, we randomly assign them to evaluate the same football videos with either visible or obscured players. In the control group, where players are visible, superstars receive lower performance ratings than non-superstars, challenging common perceptions. However, this trend is more intensified in the treatment group, where obscured identities result in even lower ratings for superstars, relative to non-superstars, suggesting a diminished superstar premium. These findings provide experimental evidence contributing to the literature on evaluation bias and the superstar effect.
+
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Working Paper</div><img src='images/paper1.png' alt="sym" width="500" height="300"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Agricultural Practices, Organized Workers and Female Political Empowerment: Evidence from Italian Mondine (Draft available upon request)
+*Agricultural Practices, Organized Workers and Female Political Empowerment: Evidence from Italian Mondine* (Draft available upon request)
 
 [Luca Bagnato](https://lucabagnato.github.io/), [Yu Pan](https://pan-yu-zurich.github.io/), [Miriam Venturini](https://miriamventurini.github.io/#about)
 
