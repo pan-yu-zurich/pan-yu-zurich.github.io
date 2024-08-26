@@ -15,7 +15,11 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 <span class='anchor' id='about-me'></span>
 
-Welcome! I am a PhD student in Management and Economics at the University of Zurich, focusing on sports and experimental economics. 
+# Welcome!
+
+I am a PhD student in Management and Economics at the University of Zurich. 
+
+My research interests include sports economics, experimental economics, and the application of advanced artificial intelligence techniques in economic research. By integrating advanced techniques from computer science and graphics technology, my studies transform everyday scenarios into controlled laboratories for investigating social science questions.
 
 # 📰 News
 - *2024 October*: I will present at the UZH Business Research Seminar on October 22.
