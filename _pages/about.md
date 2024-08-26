@@ -29,7 +29,7 @@ Welcome! I am a PhD student in Management and Economics at the University of Zur
   <div class='paper-box-image'>
     <div>
       <div class="badge">Working Paper</div>
-      <img src='images/paper4_1.png' alt="sym" width="500" height="300">
+      <img src='images/paper4_1.png' alt="sym" width="500" height="300"> <br />
       <img src='images/paper4_2.png' alt="sym" width="500" height="300">
     </div>
   </div>
