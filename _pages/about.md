@@ -103,7 +103,7 @@ My research interests include sports economics, experimental economics, and the 
 - 18th BiGSEM Doctoral Workshop on Economics and Management
 
 # 🎓 Education
-- *2024*: PhD in Management and Economics, University of Zurich
+- *2024*: Ph.D. in Management and Economics, University of Zurich
 - *2022*: M.A. in Economics, Minor in Data Science, University of Zurich
 
 # 👨‍💼 Professional Experience
