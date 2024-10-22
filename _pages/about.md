@@ -17,13 +17,12 @@ redirect_from:
 
 # 👋 Welcome!
 
-I am a PhD student in Management and Economics at the University of Zurich. 
+I am a Postdoctoral Researcher in the Chair for Services and Operations Management at the University of Zurich. 
 
 My research interests include sports economics, experimental economics, and the application of advanced artificial intelligence techniques in economic research. By integrating advanced techniques from computer science and graphics technology, my studies transform everyday scenarios into controlled laboratories for investigating social science questions.
 
 # 📰 News
-- I will present at the UZH Business Research Seminar on October 22
-- I will begin my PostDoc on October 23
+- 
 
 # 🔬 Research 
 
@@ -104,7 +103,7 @@ My research interests include sports economics, experimental economics, and the 
 - 18th BiGSEM Doctoral Workshop on Economics and Management
 
 # 🎓 Education
-- *Current*: PhD student in Management and Economics, University of Zurich
+- *2024*: PhD in Management and Economics, University of Zurich
 - *2022*: M.A. in Economics, Minor in Data Science, University of Zurich
 
 # 👨‍💼 Professional Experience
