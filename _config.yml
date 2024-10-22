@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yu Pan"
-description              : "Postdoctoral Researcher"
+description              : ""
 repository               : "pan-yu-zurich/pan-yu-zurich.github.io" 
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ google_scholar_stats_use_cdn : true
 author:
   name             : "Yu Pan"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "University of Zurich"
+  bio              : "Postdoc at University of Zurich"
   location         : "Zurich / Guangdong"
   employer         :
   pubmed           : 
