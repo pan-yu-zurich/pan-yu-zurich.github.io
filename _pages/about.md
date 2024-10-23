@@ -17,7 +17,7 @@ redirect_from:
 
 # 👋 Welcome!
 
-I am a Postdoctoral Researcher in the Chair for Services and Operations Management at the University of Zurich. 
+I am incoming Postdoctoral Researcher in the Chair for Services and Operations Management at the University of Zurich. 
 
 My research interests include sports economics, experimental economics, and the application of advanced artificial intelligence techniques in economic research. By integrating advanced techniques from computer science and graphics technology, my studies transform everyday scenarios into controlled laboratories for investigating social science questions.
 
@@ -94,7 +94,7 @@ My research interests include sports economics, experimental economics, and the 
 # 🎤  Presentations
 
 ## 2024
-- (Scheduled on October 22) UZH Business Research Seminar
+- UZH Business Research Seminar
 - UZH Workshop on Sports, Economics, and Natural Experiments
 - UZH PhD Seminar in Quantitative Marketing Research
 - 12th Thurgau Experimental Economics Meeting
