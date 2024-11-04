@@ -26,6 +26,22 @@ My research interests include sports economics, experimental economics, and the 
 
 # 🔬 Research 
 
+## Publication
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Working Paper</div><img src='images/paper2.png' alt="sym" width="500" height="300"></div></div>
+<div class='paper-box-text' markdown="1">
+
+*The Superstar Effect on Perceived Performance in Professional Football: An Online Experiment* 
+
+[Yu Pan](https://pan-yu-zurich.github.io/), [Marco Henriques Pereira](https://www.business.uzh.ch/de/research/professorships/som/Team/Marco-Henriques-Pereira.html), [Carlos Gomez-Gonzalez](https://www.carlosgomez-gonzalez.com/), [Helmut M. Dietl](https://www.business.uzh.ch/de/research/professorships/som/Team/helmutdietl.html)
+
+(*Forthcoming in the Journal of Economic Psychology*)
+
+</div>
+</div>
+
+
 ## Working Papers
 
 
@@ -66,17 +82,7 @@ My research interests include sports economics, experimental economics, and the 
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Working Paper</div><img src='images/paper2.png' alt="sym" width="500" height="300"></div></div>
-<div class='paper-box-text' markdown="1">
 
-*The Superstar Effect on Perceived Performance in Professional Football: An Online Experiment* 
-
-[Yu Pan](https://pan-yu-zurich.github.io/), [Marco Henriques Pereira](https://www.business.uzh.ch/de/research/professorships/som/Team/Marco-Henriques-Pereira.html), [Carlos Gomez-Gonzalez](https://www.carlosgomez-gonzalez.com/), [Helmut M. Dietl](https://www.business.uzh.ch/de/research/professorships/som/Team/helmutdietl.html)
-
-(*Draft available upon request*)
-
-</div>
-</div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Working Paper</div><img src='images/paper1.png' alt="sym" width="500" height="300"></div></div>
