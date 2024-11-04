@@ -22,7 +22,7 @@ I am incoming Postdoctoral Researcher in the Chair for Services and Operations M
 My research interests include sports economics, experimental economics, and the application of advanced artificial intelligence techniques in economic research. By integrating advanced techniques from computer science and graphics technology, my studies transform everyday scenarios into controlled laboratories for investigating social science questions.
 
 # 📰 News
-- 
+- My football paper is forthcoming in the Journal of Economic Psychology
 
 # 🔬 Research 
 
