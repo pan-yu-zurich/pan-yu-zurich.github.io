@@ -19,7 +19,7 @@ redirect_from:
 
 I am incoming Postdoctoral Researcher in the Chair for Services and Operations Management at the University of Zurich. 
 
-My research interests include sports economics, experimental economics, and the application of advanced artificial intelligence techniques in economic research. By integrating advanced techniques from computer science and graphics technology, my studies transform everyday scenarios into controlled laboratories for investigating social science questions.
+My research interests include sports economics, experimental economics, and the application of advanced artificial intelligence techniques in economic research. Through integrating deep learning and computer vision with experimental methods, my studies transform everyday scenarios into controlled laboratories for investigating human behavior and decision-making in sports, AI trust, and organizational settings.
 
 # 📰 News
 - My football paper is forthcoming in the Journal of Economic Psychology
