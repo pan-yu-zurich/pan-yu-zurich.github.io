@@ -32,7 +32,7 @@ My research interests include sports economics, experimental economics, and the 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Publication</div><img src='images/paper2.png' alt="sym" width="500" height="300"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Pan, Y.](https://pan-yu-zurich.github.io/), [Pereira, M. H.](https://www.business.uzh.ch/de/research/professorships/som/Team/Marco-Henriques-Pereira.html), [Gomez-Gonzalez, C.](https://www.carlosgomez-gonzalez.com/), & [Dietl, H. M.](https://www.business.uzh.ch/de/research/professorships/som/Team/helmutdietl.html) (2025). *The superstar effect on perceived performance in professional football: An online experiment*. Journal of Economic Psychology, 106, 102776. ([https://doi.org/10.1016/j.joep.2024.102776]([(https://doi.org/10.1016/j.joep.2024.102776)]))
+[Pan, Y.](https://pan-yu-zurich.github.io/), [Pereira, M. H.](https://www.business.uzh.ch/de/research/professorships/som/Team/Marco-Henriques-Pereira.html), [Gomez-Gonzalez, C.](https://www.carlosgomez-gonzalez.com/), & [Dietl, H. M.](https://www.business.uzh.ch/de/research/professorships/som/Team/helmutdietl.html) (2025). *The superstar effect on perceived performance in professional football: An online experiment*. Journal of Economic Psychology, 106, 102776. [DOI](https://doi.org/10.1016/j.joep.2024.102776)
 
 </div>
 </div>
