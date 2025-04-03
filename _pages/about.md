@@ -19,10 +19,11 @@ redirect_from:
 
 I am Postdoctoral Researcher in the Chair for Services and Operations Management at the University of Zurich. 
 
-My research interests include sports economics, experimental economics, and the application of advanced artificial intelligence techniques in economic research. Through integrating deep learning and computer vision with experimental methods, my studies transform everyday scenarios into controlled laboratories for investigating human behavior and decision-making in sports, AI trust, and organizational settings.
+My research interests include sports economics and experimental economics.
 
 # 📰 News
-- My football paper is online in the Journal of Economic Psychology!!!
+- I will present my tennis paper at IMEBESS! See you in Valencia!
+- I will visit Osaka University this Summer!
 
 # 🔬 Research 
 
@@ -94,6 +95,8 @@ My research interests include sports economics, experimental economics, and the 
 </div>
 
 # 🎤  Presentations
+## 2025
+- International Meeting on Experimental and Behavioral Social Sciences (IMEBESS)
 
 ## 2024
 - UZH Business Research Seminar
