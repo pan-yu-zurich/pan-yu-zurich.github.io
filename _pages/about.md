@@ -133,5 +133,5 @@ When I'm not in the office, I enjoy staying active through various outdoor and s
 - 🥾 [Hiking](https://www.tiktok.com/@swiss_pan) & 小潘亡命瑞士
 - ⛷️ Skiing
 - 🧗 Climbing
-- 🏸 [Badminton](https://www.swiss-badminton.ch/ranking/player.aspx?id=43266&player=5070355)
+- 🏸 [Badminton](https://www.swiss-badminton.ch/player-profile/129e990a-d277-42b5-b397-b8e98adf646e/ranking)
 
