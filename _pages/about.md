@@ -24,6 +24,7 @@ My research interests include sports economics and experimental economics.
 # 📰 News
 - I will present my tennis paper at IMEBESS! See you in Valencia!
 - I will visit Osaka University this Summer!
+- I will present my Chinese football & basketball paper at ESEA! See you in Innsbruck!
 
 # 🔬 Research 
 
@@ -97,6 +98,7 @@ My research interests include sports economics and experimental economics.
 # 🎤  Presentations
 ## 2025
 - International Meeting on Experimental and Behavioral Social Sciences (IMEBESS)
+- 16th (XVI) ESEA Conference on Sport Economics 2025
 
 ## 2024
 - UZH Business Research Seminar
