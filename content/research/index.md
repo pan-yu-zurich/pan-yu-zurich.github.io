@@ -3,8 +3,6 @@ title: Research
 hideMeta: true
 ---
 
-<p class="text-sm text-gray-600 italic mb-4"><sup>†</sup> Indicates corresponding author</p>
-
 ## Publications
 {{< publication
     title="The superstar effect on perceived performance in professional football: An online experiment"
@@ -35,3 +33,4 @@ hideMeta: true
     abstract="We study whether work practices adopted in recent history in agriculture influence the political empowerment of women in a European country. Focusing on Italy, we study the case of female rice weeders and their successful history of unionization and mobilization for better working conditions. Relying on an instrumental variable strategy to predict quasi-exogenous variation in rice production, we test whether the historical presence of female rice weeders predicts differences in measures of political empowerment during the second half of the XX century. We find that towns where rice production was historically relevant had higher support for divorce in the 1974 referendum, have more women in politics, and are more likely to have a nursery school. Our results suggest the importance of collective action of working women to achieve persistent female political empowerment. (Draft available upon request)"
     status="In Progress"
 >}}
+<p class="text-sm text-gray-600 italic mt-6 text-right"><sup>†</sup> Indicates corresponding author</p>
