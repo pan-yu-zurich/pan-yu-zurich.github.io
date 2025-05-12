@@ -3,7 +3,7 @@ title: Yu Pan
 draft: false
 role: Postdoc
 avatar: images/profile.png
-bio: Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur.
+bio: Plattenstrasse 14, 8032 Zürich, Switzerland
 organization:
   name: Universität Zürich (UZH)
   url: https://www.uzh.ch/en.html
@@ -54,7 +54,23 @@ My research interests include sports economics and experimental economics.
 
 ## 📰 News
 
-- I will present my tennis paper at **IMEBESS**! See you in Valencia!
-- I will visit **Osaka University** this Summer!
-- I will present my Chinese football & basketball paper at **ESEA**! See you in Innsbruck!
-
+{{< news
+  title="Tennis Paper"
+  time="2024-01-01"
+  color="lightest"
+  content="I will present my tennis paper at **IMEBESS**! See you in Valencia!"
+>}}
+{{< news
+  title="Osaka University"
+  time="2024-01-01"
+  color="light"
+  content="I will visit **Osaka University** this Summer!"
+>}}
+{{< news
+  title="ESEA"
+  time="2024-01-01"
+  color="mid"
+  content="I will present my Chinese football & basketball paper at **ESEA**! See you in Innsbruck!"
+>}}
+<!-- color: lightest, light, mid, dark, darkest -->
+<link rel="stylesheet" href="css/custom.css"><br>

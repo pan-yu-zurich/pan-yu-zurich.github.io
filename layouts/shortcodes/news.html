@@ -1,0 +1,4 @@
+<div class="news-item news-{{ .Get "color" | default "default" }}">
+    <em>{{ .Get "time" }}</em> - <strong>{{ .Get "title" }}</strong><br>
+    {{ .Get "content" | markdownify }}
+</div>

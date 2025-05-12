@@ -5,9 +5,9 @@ main:
   - name: Research
     url: /research/
     weight: 2
-  - name: News
-    url: '#-news'
+  - name: Teaching
+    url: /teaching/
     weight: 3
   - name: CV
-    url: /cv/CV_Pan.pdf
+    url: /cv/cv_pan.pdf
     weight: 4
