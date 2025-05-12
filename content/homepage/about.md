@@ -76,7 +76,7 @@ My research interests include sports economics and experimental economics.
   title="Conference Presentation - Austria"
   time="August 25 - 27, 2025"
   color="mid"
-  content="I will present my Chinese football & basketball paper at <a href='https://www.uibk.ac.at/de/isw/news_und_services/esea_2025/ '><strong>16th (XVI) ESEA Con­fer­ence on Sport Eco­nomics</strong></a>! See you in Innsbruck!"
+  content="I will present my Chinese football & basketball paper at the <a href='https://www.uibk.ac.at/de/isw/news_und_services/esea_2025/ '><strong>16th (XVI) ESEA Con­fer­ence on Sport Eco­nomics</strong></a>! See you in Innsbruck!"
 >}}
 <!-- color: lightest, light, mid, dark, darkest -->
 <link rel="stylesheet" href="css/custom.css"><br>
