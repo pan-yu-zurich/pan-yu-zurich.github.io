@@ -36,7 +36,6 @@ jobs:
 
       - name: Install theme dependencies
         run: |
-          cd themes/eureka
           npm install
 
       - name: Setup Hugo
