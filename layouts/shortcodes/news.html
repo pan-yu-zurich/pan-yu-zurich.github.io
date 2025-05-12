@@ -1,4 +1,22 @@
-<div class="news-item news-{{ .Get "color" | default "default" }}">
-    <em>{{ .Get "time" }}</em> - <strong>{{ .Get "title" }}</strong><br>
-    {{ .Get "content" | markdownify }}
+<div class="news-item mb-4 rounded-lg p-6 shadow-sm 
+    {{ if eq (.Get "color") "lightest" }}
+        bg-blue-50 text-blue-800
+    {{ else if eq (.Get "color") "light" }}
+        bg-blue-100 text-blue-900
+    {{ else if eq (.Get "color") "mid" }}
+        bg-blue-200 text-blue-900
+    {{ else if eq (.Get "color") "dark" }}
+        bg-blue-300 text-blue-900
+    {{ else if eq (.Get "color") "darkest" }}
+        bg-blue-400 text-white
+    {{ else }}
+        bg-gray-100 text-gray-800
+    {{ end }}
+">
+    <div class="text-lg">
+        <span class="font-medium">{{ .Get "time" }}</span> - <span class="font-bold">{{ .Get "title" }}</span>
+    </div>
+    <div class="mt-2">
+        {{ .Get "content" | safeHTML }}
+    </div>
 </div>
