@@ -1,4 +1,4 @@
-<div class="flex flex-col p-4 bg-primary rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+<div class="flex flex-col p-4 bg-primary rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 mb-4">
     <!-- Publication Details -->
     <div class="w-full">
         <!-- Title with optional URL -->
@@ -50,7 +50,9 @@
             <span class="inline-block px-3 py-1 text-sm font-medium rounded-full
                 {{ if eq (.Get "status") "Journal of Economic Psychology" }}
                     bg-green-100 text-green-800
-                {{ else if eq (.Get "status") "Draft available upon request" }}
+                {{ else if eq (.Get "status") "Submitted" }}
+                    bg-yellow-100 text-yellow-800
+                {{ else if eq (.Get "status") "In Progress" }}
                     bg-blue-100 text-blue-800
                 {{ else }}
                     bg-gray-100 text-gray-800
