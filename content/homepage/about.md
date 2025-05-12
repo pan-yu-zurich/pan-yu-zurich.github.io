@@ -56,13 +56,13 @@ My research interests include sports economics and experimental economics.
 {{< news
   title="Conference Presentation - Spain"
   time="May 21 - 24, 2025"
-  color="mid"
+  color="lightest"
   content="I will present my tennis paper at the <a href='https://www.imebess.org'><strong> ninth International Meeting on Experimental and Behavioral Social Sciences (IMEBESS) at the European University</strong></a>! See you in Valencia!"
 >}}
 {{< news
   title="Workshop Presentation - Switzerland"
   time="June 27, 2025"
-  color="mid"
+  color="light"
   content="I will present my Chinese football & basketball paper at the <a href='https://www.crsa.uzh.ch/en/news/Workshop-on-Sports,-Economics,-and-Natural-Experiments0.html'><strong>2nd Workshop on Sports, Economics, and Natural Experiments</strong></a> at University of Zurich!"
 >}}
 {{< news
@@ -74,7 +74,7 @@ My research interests include sports economics and experimental economics.
 {{< news
   title="Conference Presentation - Austria"
   time="August 25 - 27, 2025"
-  color="mid"
+  color="dark"
   content="I will present my Chinese football & basketball paper at the <a href='https://www.uibk.ac.at/de/isw/news_und_services/esea_2025/ '><strong>16th (XVI) ESEA Con­fer­ence on Sport Eco­nomics</strong></a>! See you in Innsbruck!"
 >}}
 <!-- color: lightest, light, mid, dark, darkest -->
