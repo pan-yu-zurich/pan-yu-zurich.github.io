@@ -1,21 +1,22 @@
-<div class="news-item mb-4 rounded-lg p-6 shadow-md border-l-4 
-    {{ if eq (.Get "color") "lightest" }}
-        bg-blue-50 text-slate-800 border-blue-200
-    {{ else if eq (.Get "color") "light" }}
-        bg-blue-100 text-slate-800 border-blue-300
-    {{ else if eq (.Get "color") "mid" }}
-        bg-blue-200 text-slate-800 border-blue-400
-    {{ else if eq (.Get "color") "dark" }}
-        bg-blue-300 text-slate-800 border-blue-500
-    {{ else if eq (.Get "color") "darkest" }}
-        bg-blue-400 text-slate-800 border-blue-600
+<div class="news-item mb-4 rounded-lg p-6 shadow-md border-l-4
+    {{ $color := .Get "color" }}
+    {{ if eq $color "lightest" }}
+        bg-teal-50 text-slate-800 border-teal-200
+    {{ else if eq $color "light" }}
+        bg-teal-100 text-slate-800 border-teal-300
+    {{ else if eq $color "mid" }}
+        bg-teal-200 text-slate-800 border-teal-400
+    {{ else if eq $color "dark" }}
+        bg-teal-300 text-slate-800 border-teal-500
+    {{ else if eq $color "darkest" }}
+        bg-teal-400 text-slate-800 border-teal-600
     {{ else }}
         bg-slate-100 text-slate-800 border-slate-300
     {{ end }}
 ">
     <div class="flex flex-wrap items-baseline">
         <span class="text-lg font-medium mr-1">{{ .Get "time" }}</span>
-        <span class="text-lg font-bold text-blue-700"> - {{ .Get "title" }}</span>
+        <span class="text-lg font-bold text-teal-700"> - {{ .Get "title" }}</span>
     </div>
     <div class="mt-2">
         {{ .Get "content" | safeHTML }}
@@ -23,13 +24,13 @@
 </div>
 
 <style>
-/* Enhanced link styling */
 .news-item a {
     color: inherit;
     font-weight: 600;
     text-decoration: none;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
 }
+
 .news-item a:hover {
     text-decoration: underline;
 }
