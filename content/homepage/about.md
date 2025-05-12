@@ -46,7 +46,7 @@ widget:
     attachment: 
 ---
 
-##  Self Introduction
+##  Introduction
 
 I am Postdoctoral Researcher in the Chair for Services and Operations Management at the University of Zurich.
 
