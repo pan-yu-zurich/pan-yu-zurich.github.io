@@ -57,7 +57,7 @@ My research interests include sports economics and experimental economics.
   title="Conference Presentation - Spain"
   time="May 21 - 24, 2025"
   color="lightest"
-  content="I will present my tennis paper at <a href='https://www.imebess.org'><strong>the ninth International Meeting on Experimental and Behavioral Social Sciences (IMEBESS) at the European University</strong></a>! See you in Valencia!"
+  content="I will present my tennis paper at the <a href='https://www.imebess.org'><strong> ninth International Meeting on Experimental and Behavioral Social Sciences (IMEBESS) at the European University</strong></a>! See you in Valencia!"
 >}}
 {{< news
   title="Workshop Presentation - Switzerland"
