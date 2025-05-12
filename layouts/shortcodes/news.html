@@ -18,7 +18,9 @@
         <span class="text-lg font-medium mr-1">{{ .Get "time" }}</span>
         <span class="text-lg font-bold text-teal-700 dark:text-teal-300"> - {{ .Get "title" }}</span>
     </div>
-    <div class="mt-2 prose prose-slate dark:prose-invert">
+
+    <!-- 👇 Apply consistent link styling here -->
+    <div class="mt-2 [&_a]:text-teal-700 [&_a:hover]:underline dark:[&_a]:text-teal-300">
         {{ .Get "content" | safeHTML }}
     </div>
 </div>
