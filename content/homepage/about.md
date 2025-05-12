@@ -46,31 +46,31 @@ widget:
     attachment: 
 ---
 
-## 👋 Self Introduction
+##  Self Introduction
 
 I am Postdoctoral Researcher in the Chair for Services and Operations Management at the University of Zurich.
 
 My research interests include sports economics and experimental economics.
 
-## 📰 News
+##  News
 
 {{< news
-  title="Tennis Paper"
-  time="2024-01-01"
+  title="Conference Presentation - Valencia, Spain"
+  time="2025 May 21 - 24"
   color="lightest"
-  content="I will present my tennis paper at **IMEBESS**! See you in Valencia!"
+  content="I will present my tennis paper at <a href='https://www.imebess.org'><strong>IMEBESS</strong></a>! See you in Valencia!"
 >}}
 {{< news
-  title="Osaka University"
-  time="2024-01-01"
+  title="Academic Visit - Osaka, Japan"
+  time="2025 July - August"
   color="light"
-  content="I will visit **Osaka University** this Summer!"
+  content="I will visit <a href='https://www.iser.osaka-u.ac.jp/index-e.html'><strong>Osaka University</strong></a> this Summer!"
 >}}
 {{< news
-  title="ESEA"
-  time="2024-01-01"
+  title="Conference Presentation - Innsbruck, Austria"
+  time="2025 August 25 - 27"
   color="mid"
-  content="I will present my Chinese football & basketball paper at **ESEA**! See you in Innsbruck!"
+  content="I will present my Chinese football & basketball paper at <a href='https://www.uibk.ac.at/de/isw/news_und_services/esea_2025/ '><strong>ESEA</strong></a>! See you in Innsbruck!"
 >}}
 <!-- color: lightest, light, mid, dark, darkest -->
 <link rel="stylesheet" href="css/custom.css"><br>
