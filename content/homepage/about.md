@@ -52,8 +52,7 @@ I am Postdoctoral Researcher in the Chair for Services and Operations Management
 
 My research interests include sports economics and experimental economics.
 
-##  News
-
+## News
 {{< news
   title="Conference Presentation - Spain"
   time="May 21 - 24, 2025"
@@ -63,19 +62,19 @@ My research interests include sports economics and experimental economics.
 {{< news
   title="Workshop Presentation - Switzerland"
   time="June 27, 2025"
-  color="darkest"
+  color="light"
   content="I will present my Chinese football & basketball paper at the <a href='https://www.crsa.uzh.ch/en/news/Workshop-on-Sports,-Economics,-and-Natural-Experiments0.html'><strong>2nd Workshop on Sports, Economics, and Natural Experiments</strong></a> at University of Zurich!"
 >}}
 {{< news
   title="Academic Visit - Japan"
   time="July - August, 2025"
-  color="light"
+  color="mid"
   content="I will visit <a href='https://www.iser.osaka-u.ac.jp/index-e.html'><strong>Osaka University</strong></a> this Summer!"
 >}}
 {{< news
   title="Conference Presentation - Austria"
   time="August 25 - 27, 2025"
-  color="mid"
+  color="dark"
   content="I will present my Chinese football & basketball paper at the <a href='https://www.uibk.ac.at/de/isw/news_und_services/esea_2025/ '><strong>16th (XVI) ESEA Con­fer­ence on Sport Eco­nomics</strong></a>! See you in Innsbruck!"
 >}}
 <!-- color: lightest, light, mid, dark, darkest -->
