@@ -1,4 +1,4 @@
-<div class="flex flex-col md:flex-row gap-6 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+<div class="flex flex-col md:flex-row gap-6 p-4 bg-primary rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
     <!-- Left column - Featured Image -->
     <div class="md:w-2/4">
         {{ with .Get "image" }}
@@ -9,7 +9,7 @@
     <!-- Right column - Publication Details -->
     <div class="md:w-2/4">
         <!-- Title with optional URL -->
-        <h2 class="text-xl font-bold text-gray-800 mb-2">
+        <h2 class="text-xl font-bold text-primary-800 mb-2">
             {{ if .Get "url" }}
                 <a href="{{ .Get "url" }}" class="hover:text-blue-600 transition-colors" target="_blank" rel="noopener noreferrer">
                     {{ .Get "title" }}
@@ -20,7 +20,7 @@
         </h2>
 
         <!-- Authors -->
-        <p class="text-gray-600 mb-2">
+        <p class="text-primary-600 mb-2">
             {{ .Get "authors" }}
         </p>
         
@@ -48,7 +48,7 @@
         <!-- DOI if exists -->
         {{ with .Get "doi" }}
         <div class="mb-2">
-            <span class="text-gray-700 font-medium">DOI: </span>
+            <span class="text-primary-700 font-medium">DOI: </span>
             <a href="https://doi.org/{{ . }}" class="text-blue-600 hover:text-blue-800 transition-colors" target="_blank" rel="noopener noreferrer">
                 {{ . }}
             </a>
