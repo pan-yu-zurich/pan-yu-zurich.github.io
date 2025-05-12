@@ -1,6 +1,6 @@
 mainSections:
   - posts
-description: Eureka is a elegant and powerful theme for Hugo.
+description: I am Postdoctoral Researcher in the Chair for Services and Operations Management at the University of Zurich.
 
 repoEditURL:
 
@@ -19,8 +19,8 @@ navPosition: right
 
 # E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
 siteType: Person
-icon: images/icon.png
-publisherName: WANG Chucheng
+icon: /images/icon.png
+publisherName: Yu Pan
 publisherLogo:
 
 highlight:

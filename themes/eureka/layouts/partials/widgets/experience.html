@@ -1,3 +1,6 @@
+<h2 class="mb-6 text-2xl font-bold text-primary dark:text-primary-dark">
+  {{ .Params.title }}
+</h2>
 {{ range .Params.experiences }}
   <div class="mb-6">
     <div
@@ -24,7 +27,7 @@
         <div class="shrink-0">{{ .dates | markdownify }}</div>
       </div>
 
-      <div class="mt-5">{{ .writeup | markdownify }}</div>
+      <div class="mt-4">{{ .writeup | markdownify }}</div>
     </div>
   </div>
 {{ end }}

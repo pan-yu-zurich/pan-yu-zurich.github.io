@@ -1,6 +1,6 @@
 ---
-title: Example Author
-role: Example Role
+title: Yu Pan
+role: Postdoc at UZH
 avatar: images/icon.png
 bio: Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur.
 organization:

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Eureka Demo</title>
+    <title>Yu Pan</title>
     <link>https://pan-yu-zurich.github.io/</link>
-    <description>Recent content on Eureka Demo</description>
+    <description>Recent content on Yu Pan</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;WANG Chucheng&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;MA Ruiqi&lt;/a&gt;
+    <copyright>&amp;copy; 2025 Yu Pan&lt;/a&gt;
 </copyright>
     <lastBuildDate>Wed, 31 Mar 2021 13:11:22 +0800</lastBuildDate>
     <atom:link href="https://pan-yu-zurich.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -79,6 +79,13 @@
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       <guid>https://pan-yu-zurich.github.io/posts/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>https://pan-yu-zurich.github.io/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pan-yu-zurich.github.io/research/</guid>
+      <description>&lt;h2 id=&#34;publications&#34;&gt;Publications&lt;/h2&gt;&#xA;&lt;div class=&#34;flex flex-col md:flex-row gap-6 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300&#34;&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;div class=&#34;md:w-2/4&#34;&gt;&#xD;&#xA;        &#xD;&#xA;        &lt;img src=&#34;https://pan-yu-zurich.github.io/images/paper2.png&#34; alt=&#34;Publication featured image&#34; class=&#34;w-full h-auto rounded-lg object-cover&#34;&gt;&#xD;&#xA;        &#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;    &lt;div class=&#34;md:w-2/4&#34;&gt;&#xD;&#xA;        &#xD;&#xA;        &lt;h2 class=&#34;text-xl font-bold text-gray-800 mb-2&#34;&gt;&#xD;&#xA;            &#xD;&#xA;                Your Publication Title&#xD;&#xA;            &#xD;&#xA;        &lt;/h2&gt;&#xD;&#xA;&#xD;&#xA;        &#xD;&#xA;        &lt;p class=&#34;text-gray-600 mb-2&#34;&gt;&#xD;&#xA;            Author 1, Author 2, Author 3&#xD;&#xA;        &lt;/p&gt;&#xD;&#xA;        &#xD;&#xA;        &#xD;&#xA;        &#xD;&#xA;        &lt;details  class=&#34;mb-2&#34;&gt;&#xD;&#xA;            &lt;summary class=&#34;custom-collapse&#34;&gt;&#xD;&#xA;                &lt;div class=&#34;collapse-arrow&#34;&gt;&#xD;&#xA;                    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;1rem&#34; height=&#34;1rem&#34;&gt;&#xD;&#xA;                        &lt;path fill=&#34;currentColor&#34; d=&#34;M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6l1.41-1.42Z&#34; /&gt;&#xD;&#xA;                    &lt;/svg&gt;&#xD;&#xA;                &lt;/div&gt;&#xD;&#xA;                &lt;span class=&#34;collapse-title&#34;&gt;&#xD;&#xA;                    Abstract&#xD;&#xA;                &lt;/span&gt;&#xD;&#xA;            &lt;/summary&gt;&#xD;&#xA;            &lt;p class=&#34;my-1 mx-2&#34;&gt;&#xD;&#xA;                &lt;span class=&#34;collapse-content&#34;&gt;This is a brief abstract of the publication.&lt;/span&gt;&#xD;&#xA;            &lt;/p&gt;&#xD;&#xA;        &lt;/details&gt;&#xD;&#xA;        &#xD;&#xA;&#xD;&#xA;        &#xD;&#xA;        &#xD;&#xA;        &lt;div class=&#34;mb-2&#34;&gt;&#xD;&#xA;            &lt;span class=&#34;text-gray-700 font-medium&#34;&gt;DOI: &lt;/span&gt;&#xD;&#xA;            &lt;a href=&#34;https://doi.org/10.1234/example.doi&#34; class=&#34;text-blue-600 hover:text-blue-800 transition-colors&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&#xD;&#xA;                10.1234/example.doi&#xD;&#xA;            &lt;/a&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;        &#xD;&#xA;&#xD;&#xA;        &#xD;&#xA;        &lt;div class=&#34;mt-3&#34;&gt;&#xD;&#xA;            &lt;span class=&#34;inline-block px-3 py-1 text-sm font-medium rounded-full&#xD;&#xA;                &#xD;&#xA;                    bg-green-100 text-green-800&#xD;&#xA;                &#34;&gt;&#xD;&#xA;                published&#xD;&#xA;            &lt;/span&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://pan-yu-zurich.github.io/css/collapse.css&#34;&gt;&#xA;&lt;h2 id=&#34;working-papers&#34;&gt;Working Papers&lt;/h2&gt;&#xA;&lt;div class=&#34;flex flex-col md:flex-row gap-6 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300&#34;&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;div class=&#34;md:w-2/4&#34;&gt;&#xD;&#xA;        &#xD;&#xA;        &lt;img src=&#34;https://pan-yu-zurich.github.io/images/paper1.png&#34; alt=&#34;Publication featured image&#34; class=&#34;w-full h-auto rounded-lg object-cover&#34;&gt;&#xD;&#xA;        &#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;    &lt;div class=&#34;md:w-2/4&#34;&gt;&#xD;&#xA;        &#xD;&#xA;        &lt;h2 class=&#34;text-xl font-bold text-gray-800 mb-2&#34;&gt;&#xD;&#xA;            &#xD;&#xA;                Your Working Paper Title&#xD;&#xA;            &#xD;&#xA;        &lt;/h2&gt;&#xD;&#xA;&#xD;&#xA;        &#xD;&#xA;        &lt;p class=&#34;text-gray-600 mb-2&#34;&gt;&#xD;&#xA;            Author 1, Author 2, Author 3&#xD;&#xA;        &lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

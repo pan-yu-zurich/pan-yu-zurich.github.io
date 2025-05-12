@@ -1,47 +1,47 @@
 ---
-title: Experience
+title: 👨‍💼 Experience
 draft: false
 experiences:
-  - title: Example Role 1
+  - title: Short-Term Consultant (STC)
     organization:
-      name: Example Organization 1
-      url: https://example.org
-    dates: "2019 - Present"
-    location: Country
+      name: World Bank
+      url: https://www.worldbank.org
+    dates: "2023 Spring"
+    location: Switzerland
     writeup: >
-      Donec scelerisque egestas augue at tempor. Fusce faucibus magna in.
+      Content can be added here. You can use **Markdown** to format the text.
 
-      - Suspendisse lacinia mauris a laoreet vehicula.
+    #   - Suspendisse lacinia mauris a laoreet vehicula.
 
-      - Aenean tincidunt enim vitae ante blandit tempor.
+    #   - Aenean tincidunt enim vitae ante blandit tempor.
 
-      - Nam tincidunt diam quis lorem rutrum ullamcorper.
+    #   - Nam tincidunt diam quis lorem rutrum ullamcorper.
 
-  - title: Example Role 2
+  - title: Research Assisstant
     organization:
-      name: Example Organization 2
-      url: https://example.org
-    dates: "2017 - 2019"
-    location: Country
+      name: ETH Zurich
+      url: https://www.ethz.ch/en.html
+    dates: "2022 Spring"
+    location: Switzerland
     writeup: >
-      **Aliquam** at **rutrum** ante. In sed quam faucibus.
+      Content can be added here. You can use **Markdown** to format the text.
 
 weight: 3
 widget:
   handler: experience
 
   # Options: sm, md, lg and xl. Default is md.
-  width: lg
+  width: md
 
   sidebar:
     # Options: left and right. Leave blank to hide.
-    position: left
+    position:
     # Options: sm, md, lg and xl. Default is md.
     scale:
 
   background:
     # Options: primary, secondary, tertiary or any valid color value. Default is primary.
-    color:
+    color: secondary
     image:
     # Options: auto, cover and contain. Default is auto.
     size:
