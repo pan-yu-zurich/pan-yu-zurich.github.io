@@ -16,22 +16,9 @@
 ">
     <div class="flex flex-wrap items-baseline">
         <span class="text-lg font-medium mr-1">{{ .Get "time" }}</span>
-        <span class="text-lg font-bold text-teal-700"> - {{ .Get "title" }}</span>
+        <span class="text-lg font-bold text-teal-700 dark:text-teal-300"> - {{ .Get "title" }}</span>
     </div>
-    <div class="mt-2">
+    <div class="mt-2 prose prose-slate dark:prose-invert">
         {{ .Get "content" | safeHTML }}
     </div>
 </div>
-
-<style>
-.news-item a {
-    color: inherit;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.news-item a:hover {
-    text-decoration: underline;
-}
-</style>
