@@ -5,8 +5,8 @@ role: Postdoc
 avatar: images/profile.png
 bio: Plattenstrasse 14, 8032 Zürich, Switzerland
 organization:
-  name: Universität Zürich (UZH)
-  url: https://www.uzh.ch/en.html
+  name: University of Zurich (UZH)
+  url: https://www.business.uzh.ch/de/research/professorships/som/Team.html
 social:
   - icon: envelope
     iconPack: fas
@@ -48,7 +48,7 @@ widget:
 
 ##  Introduction
 
-I am a Postdoctoral Researcher in the Chair of Services and Operations Management at the University of Zurich.
+I am a Postdoctoral Researcher in the Department of Business Administration at the University of Zurich.
 
 My research focuses on sports economics and experimental economics. 
 
@@ -59,7 +59,7 @@ I earned my Ph.D. in Management and Economics from the University of Zurich in O
   title="Conference Presentation - Spain"
   time="May 21 - 24, 2025"
   color="lightest"
-  content="I will present my tennis paper at the <a href='https://www.imebess.org'><strong> ninth International Meeting on Experimental and Behavioral Social Sciences (IMEBESS) at the European University</strong></a>! See you in Valencia!"
+  content="I will present my tennis paper at the <a href='https://www.imebess.org'><strong> ninth International Meeting on Experimental and Behavioral Social Sciences (IMEBESS) at the European University</strong></a>!"
 >}}
 {{< news
   title="Workshop Presentation - Switzerland"
@@ -77,7 +77,7 @@ I earned my Ph.D. in Management and Economics from the University of Zurich in O
   title="Conference Presentation - Austria"
   time="August 25 - 27, 2025"
   color="dark"
-  content="I will present my Chinese football & basketball paper at the <a href='https://www.uibk.ac.at/de/isw/news_und_services/esea_2025/ '><strong>16th (XVI) ESEA Con­fer­ence on Sport Eco­nomics</strong></a>! See you in Innsbruck!"
+  content="I will present my Chinese football & basketball paper at the <a href='https://www.uibk.ac.at/de/isw/news_und_services/esea_2025/ '><strong>16th (XVI) ESEA Con­fer­ence on Sport Eco­nomics</strong></a>!"
 >}}
 <!-- color: lightest, light, mid, dark, darkest -->
 <link rel="stylesheet" href="css/custom.css"><br>
