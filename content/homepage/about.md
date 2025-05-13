@@ -48,9 +48,11 @@ widget:
 
 ##  Introduction
 
-I am Postdoctoral Researcher in the Chair for Services and Operations Management at the University of Zurich.
+I am a Postdoctoral Researcher in the Chair of Services and Operations Management at the University of Zurich.
 
-My research interests include sports economics and experimental economics.
+My research focuses on sports economics and experimental economics. 
+
+I earned my Ph.D. in Management and Economics from the University of Zurich in October 2024. Prior to my doctoral studies, I worked as a short-term consultant at the World Bank and as a research assistant at ETH Zurich.
 
 ## News
 {{< news
