@@ -73,6 +73,12 @@ I earned my Ph.D. in Management and Economics from the University of Zurich in O
   color="mid"
   content="I will visit <a href='https://www.iser.osaka-u.ac.jp/index-e.html'><strong>Osaka University</strong></a> this Summer!"
 >}}
+{{< news
+  title="Conference Presentation - Austria"
+  time="August 25 - 27, 2025"
+  color="dark"
+  content="I will present my Chinese football & basketball paper at the !"
+>}}
 
 <!-- color: lightest, light, mid, dark, darkest -->
 <link rel="stylesheet" href="css/custom.css"><br>
