@@ -77,7 +77,7 @@ I earned my Ph.D. in Management and Economics from the University of Zurich in O
   title="Conference Presentation - Austria"
   time="August 25 - 27, 2025"
   color="dark"
-  content="I will present my Chinese football & basketball paper at the !"
+  content="I will present my Chinese football & basketball paper at the 16th (XVI) ESEA Con­fer­ence on Sport Eco­nomics 2025!"
 >}}
 
 <!-- color: lightest, light, mid, dark, darkest -->
