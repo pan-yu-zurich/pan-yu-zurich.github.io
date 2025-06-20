@@ -55,12 +55,7 @@ My research focuses on sports economics and experimental economics.
 I earned my Ph.D. in Management and Economics from the University of Zurich in October 2024. Prior to my doctoral studies, I worked as a short-term consultant at the World Bank and as a research assistant at ETH Zurich.
 
 ## News
-{{< news
-  title="Conference Presentation - Spain"
-  time="May 21 - 24, 2025"
-  color="lightest"
-  content="I will present my tennis paper at the <a href='https://www.imebess.org'><strong> ninth International Meeting on Experimental and Behavioral Social Sciences (IMEBESS) at the European University</strong></a>!"
->}}
+
 {{< news
   title="Workshop Presentation - Switzerland"
   time="June 27, 2025"
