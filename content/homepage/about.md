@@ -57,12 +57,6 @@ I earned my Ph.D. in Management and Economics from the University of Zurich in O
 ## News
 
 {{< news
-  title="Workshop Presentation - Switzerland"
-  time="June 27, 2025"
-  color="light"
-  content="I will present my Chinese football & basketball paper at the <a href='https://www.crsa.uzh.ch/en/news/Workshop-on-Sports,-Economics,-and-Natural-Experiments0.html'><strong>2nd Workshop on Sports, Economics, and Natural Experiments</strong></a> at University of Zurich!"
->}}
-{{< news
   title="Academic Visit - Japan"
   time="July - August, 2025"
   color="mid"
@@ -72,7 +66,7 @@ I earned my Ph.D. in Management and Economics from the University of Zurich in O
   title="Conference Presentation - Austria"
   time="August 25 - 27, 2025"
   color="dark"
-  content="I will present my Chinese football & basketball paper at the <a href='https://www.uibk.ac.at/de/isw/news_und_services/esea_2025/'><strong>16th (XVI) ESEA Con­fer­ence on Sport Eco­nomics 2025</strong></a>!"
+  content="I will present my Chinese football paper at the <a href='https://www.uibk.ac.at/de/isw/news_und_services/esea_2025/'><strong>16th (XVI) ESEA Con­fer­ence on Sport Eco­nomics 2025</strong></a>!"
 >}}
 
 <!-- color: lightest, light, mid, dark, darkest -->
