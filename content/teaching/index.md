@@ -4,6 +4,7 @@ hideMeta: true
 ---
 
 ## Teaching Assistant
+- **2025 Fall:** AI in Services Industries (UZH)
 - **2025 Spring:** Industrial Perspectives on Operations Management (UZH)
 - **2024 Fall:** Services & Operations Management (UZH)
 
