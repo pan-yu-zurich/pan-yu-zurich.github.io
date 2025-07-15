@@ -40,8 +40,12 @@
         <!-- Presentations if exists -->
         {{ with .Get "presentations" }}
         <div class="mb-2">
-            <span class="text-primary-700 font-medium">Presentations: </span>
-            <span class="text-primary-600">{{ . | safeHTML }}</span>
+            <span class="text-primary-700 font-medium text-sm">Presentations:</span>
+            <div class="text-primary-600 text-sm mt-1">
+                {{ range split . ";" }}
+                    <div class="ml-2">{{ . | safeHTML }}</div>
+                {{ end }}
+            </div>
         </div>
         {{ end }}
 
