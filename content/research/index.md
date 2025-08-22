@@ -43,9 +43,8 @@ hideMeta: true
 title="Can Foreign Talent Save Chinese Football?"
 authors="<a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a><sup>†</sup>, <a href='https://www.business.uzh.ch/de/research/professorships/som/Team/Marco-Henriques-Pereira.html'><strong>Marco Henriques Pereira</strong></a>"
 abstract=""
-presentations="June 2025, UZH Workshop on Sports, Economics, and Natural Experiments; August 2025, 16th ESEA Conference on Sport Economics (Scheduled)"
+presentations="June 2025, UZH Workshop on Sports, Economics, and Natural Experiments; August 2025, 16th ESEA Conference on Sport Economics; September 2025, AOM Publishing and Paper Development Workshop (Zurich)"
 status="In Progress"
-
 >}}
 
 <p class="text-sm text-gray-600 italic mt-6 text-right"><sup>†</sup> Indicates corresponding author</p>
