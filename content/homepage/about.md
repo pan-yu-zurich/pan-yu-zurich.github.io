@@ -57,16 +57,16 @@ I earned my Ph.D. in Management and Economics from the University of Zurich in O
 ## News
 
 {{< news
-  title="Academic Visit - Japan"
-  time="July - August, 2025"
-  color="mid"
-  content="I will visit <a href='https://www.iser.osaka-u.ac.jp/index-e.html'><strong>Osaka University</strong></a> this Summer!"
->}}
-{{< news
   title="Conference Presentation - Austria"
   time="August 25 - 27, 2025"
   color="dark"
   content="I will present my Chinese football paper at the <a href='https://www.uibk.ac.at/de/isw/news_und_services/esea_2025/'><strong>16th (XVI) ESEA Con­fer­ence on Sport Eco­nomics 2025</strong></a>!"
+>}}
+{{< news
+  title="Workshop Presentation - Switzerland"
+  time="September 29, 2025"
+  color="dark"
+  content="I will present my Chinese football paper at the <a href='https://aom.org/events/event-detail/2025/09/29/higher-logic-calendar/amd-publishing-and-paper-development-workshop-zurich-switzerland'><strong>AOM Publishing and Paper Development Workshop</strong></a> in Zurich!"
 >}}
 
 <!-- color: lightest, light, mid, dark, darkest -->
