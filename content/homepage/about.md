@@ -66,7 +66,7 @@ I earned my Ph.D. in Management and Economics from the University of Zurich in O
   title="Workshop Presentation - Switzerland"
   time="September 29, 2025"
   color="dark"
-  content="I will present my Chinese football paper at the <a href='https://aom.org/events/event-detail/2025/09/29/higher-logic-calendar/amd-publishing-and-paper-development-workshop-zurich-switzerland'><strong>AOM Publishing and Paper Development Workshop</strong></a> in Zurich!"
+  content="I will present my Chinese football paper at the <a href='https://aom.org/events/event-detail/2025/09/29/higher-logic-calendar/amd-publishing-and-paper-development-workshop-zurich-switzerland'><strong>AMD Publishing and Paper Development Workshop</strong></a> in Zurich!"
 >}}
 
 <!-- color: lightest, light, mid, dark, darkest -->
