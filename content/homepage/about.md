@@ -57,16 +57,10 @@ I earned my Ph.D. in Management and Economics from the University of Zurich in O
 ## News
 
 {{< news
-  title="Conference Presentation - Austria"
-  time="August 25 - 27, 2025"
+  title="Job Market"
+  time="2025"
   color="dark"
-  content="I will present my Chinese football paper at the <a href='https://www.uibk.ac.at/de/isw/news_und_services/esea_2025/'><strong>16th (XVI) ESEA Con­fer­ence on Sport Eco­nomics 2025</strong></a>!"
->}}
-{{< news
-  title="Workshop Presentation - Switzerland"
-  time="September 29, 2025"
-  color="dark"
-  content="I will present my Chinese football paper at the <a href='https://aom.org/events/event-detail/2025/09/29/higher-logic-calendar/amd-publishing-and-paper-development-workshop-zurich-switzerland'><strong>AMD Publishing and Paper Development Workshop</strong></a> in Zurich!"
+  content="I am looking for professorship positions mainly in sports economics/management or experimental/behavioral related. I am also open to industry positions. Please feel free to reach out for a coffee chat in Zurich, either through my email <a href='mailto:yu.pan@business.uzh.ch'><strong>yu.pan@business.uzh.ch</strong></a> or WeChat <strong>P83412275</strong>."
 >}}
 
 <!-- color: lightest, light, mid, dark, darkest -->
