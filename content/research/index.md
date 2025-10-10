@@ -46,6 +46,14 @@ abstract=""
 presentations="June 2025, UZH Workshop on Sports, Economics, and Natural Experiments; August 2025, 16th ESEA Conference on Sport Economics; September 2025, AMD Publishing and Paper Development Workshop"
 status="In Progress"
 >}}
+>
+>{{< publication
+title="Discrimination"
+authors="<a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a><sup>†</sup>, <a href='https://sites.google.com/view/gwen-jiro-clochard/home'><strong>Gwen-Jirō Clochard</strong></a>, <a href='https://shohei-yamamoto.com/'><strong>Shohei Yamamoto</strong></a>, <a href='https://sites.google.com/site/yoshiokamijo/'><strong>Yoshio Kamijo</strong></a>"
+abstract=""
+presentations=""
+status="In Progress"
+sponsorship="<div class='mt-4'><img src='/content/research/elevenlabs-logo-black.png' alt='ElevenLabs' class='h-8' /></div>"
 
 <p class="text-sm text-gray-600 italic mt-6 text-right"><sup>†</sup> Indicates corresponding author</p>
 <p class="text-sm text-gray-600 italic mt-2 text-right">* indicates presentation by coauthor</p>
