@@ -24,7 +24,7 @@ hideMeta: true
 >}}
 
 {{< publication
-    title="When Robots Think and Feel: Will Trust Disappear?"
+    title="When Robots Think and Feel, Will Trust Disappear? Evidence from an Online Experiment"
     authors="<a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a><sup>†</sup>, <a href='https://www.carlosgomez-gonzalez.com/'><strong>Carlos Gomez-Gonzalez</strong></a>, <a href='https://sites.google.com/view/gwen-jiro-clochard/home'><strong>Gwen-Jiro Clochard</strong></a>, <a href='https://www.business.uzh.ch/de/research/professorships/som/Team/helmutdietl.html'><strong>Helmut M. Dietl</strong></a>"
     abstract="Previously limited to mechanical tasks, robots are increasingly performing tasks that require human-like cognitive and emotional capabilities. However, how these anthropomorphized roles impact perceived trustworthiness remains unclear. We examine when and why humans trust robots, using advanced AI-generated video simulations across three service industries. In a large online experiment (N = 2,309), we randomized the presence of robots, the task performed and human supervision. Our systematic investigation of task anthropomorphism establishes that robots performing mechanical tasks are trusted more than those performing thinking/feeling tasks requiring higher anthropomorphism. Our analysis of robot appearance demonstrates that physical design does not influence trust in fully-automated environments. Furthermore, we find that emphasizing human supervision mitigates the lack of trust associated with robotization. These findings extend the uncanny valley theory beyond physical appearance to cognitive and emotional anthropomorphism, challenge linear conceptions of anthropomorphism, and underscore the importance of human presence in fostering trust in service environments. Our results provide critical insights for creating more trustworthy and socially beneficial AI systems, suggesting that a gradual introduction of anthropomorphized AI into complex roles, combined with appropriate human supervision, can help organizations deploy robotic systems in ways that enhance rather than diminish service experiences. (Draft available upon request)"
     presentations="March 2024, 12th Thurgau Experimental Economics Meeting; April 2024, UZH PhD Seminar in Quantitative Marketing Research"
@@ -51,7 +51,7 @@ status="In Progress"
 {{< publication
 title="Discrimination"
 authors="<a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a> (Joint with <a href='https://sites.google.com/view/gwen-jiro-clochard/home'><strong>Gwen-Jirō Clochard</strong></a>, <a href='https://shohei-yamamoto.com/'><strong>Shohei Yamamoto</strong></a>, <a href='https://sites.google.com/site/yoshiokamijo/'><strong>Yoshio Kamijo</strong></a>)"
-abstract="Partnership with <a href='https://elevenlabs.io' target='_blank'><img src='/images/elevenlabs-logo-black.png' alt='ElevenLabs' class='inline h-4 align-middle' /></a>"
+abstract="<span style='white-space: nowrap;'>Partnership with <a href='https://elevenlabs.io' target='_blank'><img src='/images/elevenlabs-logo-black.png' alt='ElevenLabs' class='inline h-4 align-middle' /></a></span>"
 presentations=""
 status="In Progress"
 >}}
