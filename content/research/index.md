@@ -50,12 +50,11 @@ status="In Progress"
 
 {{< publication
 title="Discrimination"
-authors="<a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a><sup>†</sup>, <a href='https://sites.google.com/view/gwen-jiro-clochard/home'><strong>Gwen-Jirō Clochard</strong></a>, <a href='https://shohei-yamamoto.com/'><strong>Shohei Yamamoto</strong></a>, <a href='https://sites.google.com/site/yoshiokamijo/'><strong>Yoshio Kamijo</strong></a>"
+authors="<a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a><sup>†</sup> (Joint with <a href='https://sites.google.com/view/gwen-jiro-clochard/home'><strong>Gwen-Jirō Clochard</strong></a>, <a href='https://shohei-yamamoto.com/'><strong>Shohei Yamamoto</strong></a>, <a href='https://sites.google.com/site/yoshiokamijo/'><strong>Yoshio Kamijo</strong></a>)"
 abstract=""
-presentations=""
+presentations="Partnership with <img src='/content/research/elevenlabs-logo-black.png' alt='ElevenLabs' class='inline h-6 align-middle' />"
 status="In Progress"
-sponsorship="<div class='mt-4'><img src='/content/research/elevenlabs-logo-black.png' alt='ElevenLabs' class='h-8' /></div>"
-}}
+>}}
 
 
 
