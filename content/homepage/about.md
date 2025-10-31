@@ -55,18 +55,11 @@ My research focuses on sports economics and experimental economics.
 I earned my Ph.D. in Management and Economics from the University of Zurich in October 2024. Prior to my doctoral studies, I worked as a short-term consultant at the World Bank and as a research assistant at ETH Zurich.
 
 ## News
-
-## News
 {{< news
   title="Job Market"
   time="2025"
   color="dark"
   content="I am looking for professorship positions mainly in sports economics/management or experimental/behavioral related. I am also open to industry positions. Please feel free to reach out for a coffee chat in Zurich, either through my email <a href='mailto:yu.pan@business.uzh.ch'><strong>yu.pan@business.uzh.ch</strong></a> or WeChat <strong>P83412275</strong>."
 >}}
-
-<br>
-<div style="text-align: center; margin: 40px 0;">
-  <img src="/images/home_page.jpg" alt="Home page image" style="max-width: 100%; height: auto;">
-</div>
-
-<link rel="stylesheet" href="css/custom.css">
+<!-- color: lightest, light, mid, dark, darkest -->
+<link rel="stylesheet" href="css/custom.css"><br>
