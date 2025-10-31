@@ -1,13 +1,13 @@
 <footer class="bg-secondary-bg">
-  <div class="flex flex-col items-center justify-center space-y-4">
-    <!-- Your image here - full width -->
-    <div class="w-full">
-      <img src="/images/home_page.jpg" alt="Footer image" class="w-full h-auto">
-    </div>
-    
-    <!-- Copyright text -->
+  <!-- Image at full width, no padding -->
+  <div class="w-full">
+    <img src="/images/home_page.jpg" alt="Footer image" class="w-full h-auto block">
+  </div>
+  
+  <!-- Copyright text with padding -->
+  <div class="flex justify-center py-8">
     {{ with .Site.Copyright }}
-    <div class="text-sm text-gray-500 pb-8">
+    <div class="text-sm text-gray-500">
       {{ . | safeHTML }}
     </div>
     {{ end }}
