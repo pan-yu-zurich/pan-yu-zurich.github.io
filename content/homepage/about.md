@@ -54,10 +54,10 @@ I earned my Ph.D. in Management and Economics from the University of Zurich in O
 
 ## News
 {{< news
-  title="Job Market"
+  title="To be decided"
   time="2025"
   color="dark"
-  content="I am looking for professorship positions mainly in sports economics/management or experimental/behavioral related. I am also open to industry positions. Please feel free to reach out for a coffee chat in Zurich, either through my email <a href='mailto:yu.pan@business.uzh.ch'><strong>yu.pan@business.uzh.ch</strong></a> or WeChat <strong>P83412275</strong>."
+  content=""
 >}}
 <!-- color: lightest, light, mid, dark, darkest -->
 <link rel="stylesheet" href="css/custom.css"><br>
