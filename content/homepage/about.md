@@ -55,7 +55,7 @@ I earned my Ph.D. in Management and Economics from the University of Zurich in O
 ## News
 {{< news
   title="To be decided"
-  time="2025"
+  time="2026"
   color="dark"
   content=""
 >}}
