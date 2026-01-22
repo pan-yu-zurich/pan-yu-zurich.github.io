@@ -40,7 +40,7 @@ hideMeta: true
 >}}
 
 {{< publication
-title="Can Foreign Talent Save Chinese Football?"
+title="Chinese Football"
 authors="<a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a><sup>†</sup>, <a href='https://www.business.uzh.ch/de/research/professorships/som/Team/Marco-Henriques-Pereira.html'><strong>Marco Henriques Pereira</strong></a>"
 abstract=""
 presentations="June 2025, UZH Workshop on Sports, Economics, and Natural Experiments; August 2025, 16th ESEA Conference on Sport Economics; September 2025, AMD Publishing and Paper Development Workshop"
