@@ -2,7 +2,7 @@
 title: Yu Pan
 draft: false
 role: Postdoc
-avatar: images/profile.png
+avatar: images/profile1.png
 bio: Plattenstrasse 14, 8032 Zürich, Switzerland
 organization:
   name: University of Zurich (UZH)
