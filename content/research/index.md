@@ -48,6 +48,8 @@ status="Revise & Resubmit"
     status="In Progress"
 >}}
 
+## Selected Work in Progress
+
 {{< publication
 title="Discrimination"
 authors="<a href='https://sites.google.com/view/gwen-jiro-clochard/home'><strong>Gwen-Jirō Clochard</strong></a>, <a href='https://sites.google.com/site/yoshiokamijo/'><strong>Yoshio Kamijo</strong></a>, <a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a>, <a href='https://shohei-yamamoto.com/'><strong>Shohei Yamamoto</strong></a>"
