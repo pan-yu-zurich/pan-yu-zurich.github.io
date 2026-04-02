@@ -13,16 +13,16 @@ hideMeta: true
     status="Journal of Economic Psychology"
 >}}
 
-
-## Working Papers
-
 {{< publication
     title="When Robots Think and Feel, Will Trust Disappear? Evidence from an Online Experiment"
     authors="<a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a><sup>†</sup>, <a href='https://www.carlosgomez-gonzalez.com/'><strong>Carlos Gomez-Gonzalez</strong></a>, <a href='https://sites.google.com/view/gwen-jiro-clochard/home'><strong>Gwen-Jirō Clochard</strong></a>, <a href='https://www.business.uzh.ch/de/research/professorships/som/Team/helmutdietl.html'><strong>Helmut M. Dietl</strong></a>"
-    abstract="Previously limited to mechanical tasks, robots are increasingly performing tasks that require human-like cognitive and emotional capabilities. However, how these anthropomorphized roles impact perceived trustworthiness remains unclear. We examine when and why humans trust robots, using advanced AI-generated video simulations across three service industries. In a large online experiment (N = 2,309), we randomized the presence of robots, the task performed and human supervision. Our systematic investigation of task anthropomorphism establishes that robots performing mechanical tasks are trusted more than those performing thinking/feeling tasks requiring higher anthropomorphism. Our analysis of robot appearance demonstrates that physical design does not influence trust in fully-automated environments. Furthermore, we find that emphasizing human supervision mitigates the lack of trust associated with robotization. These findings extend the uncanny valley theory beyond physical appearance to cognitive and emotional anthropomorphism, challenge linear conceptions of anthropomorphism, and underscore the importance of human presence in fostering trust in service environments. Our results provide critical insights for creating more trustworthy and socially beneficial AI systems, suggesting that a gradual introduction of anthropomorphized AI into complex roles, combined with appropriate human supervision, can help organizations deploy robotic systems in ways that enhance rather than diminish service experiences. (Draft available upon request)"
+    abstract="Previously limited to mechanical tasks, robots are increasingly performing tasks that require human-like cognitive and emotional capabilities. However, how these anthropomorphized roles impact perceived trustworthiness remains unclear. We examine when and why humans trust robots, using advanced AI-generated video simulations across three service industries. In a large online experiment (N = 2309), we randomized the presence and appearance of robots, the task performed, and human supervision. The task-type analysis shows that perceived trustworthiness is higher when robots perform mechanical tasks than when they perform thinking/feeling tasks that require greater anthropomorphism. The robot appearance analysis demonstrates that physical design does not influence trust in fully-automated environments. Additionally, we find that emphasizing human supervision mitigates the trust deficit associated with robotization. These findings extend the uncanny valley theory beyond physical appearance to cognitive and emotional anthropomorphism, challenge linear conceptions of anthropomorphism, and underscore the importance of human presence in fostering trust in service environments. These results suggest that phased introduction of robots and emphasis on human supervision can preserve trust in increasingly automated service environments."
     presentations="March 2024, 12th Thurgau Experimental Economics Meeting; April 2024, UZH PhD Seminar in Quantitative Marketing Research"
-    status="Revise & Resubmit"
+    doi="https://doi.org/10.1016/j.socec.2026.102563"
+    status="Journal of Behavioral and Experimental Economics"
 >}}
+>
+## Working Papers
 
 {{< publication
 title="Chinese Football"
