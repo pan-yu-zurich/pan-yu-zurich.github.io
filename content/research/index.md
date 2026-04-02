@@ -10,6 +10,7 @@ hideMeta: true
     abstract="We conduct a novel experiment to investigate whether football superstars consistently receive more favorable evaluations than non-superstars. Engaging 500 participants from Prolific, we randomly assign them to evaluate the same football videos with either visible or obscured players. In the control group, where players are visible, superstars receive lower performance ratings than non-superstars, challenging common perceptions. This trend is more intensified in the treatment group, where obscured identities result in even lower ratings for superstars, relative to non-superstars, suggesting a diminished superstar premium. These findings provide causal experimental evidence contributing to the literature on evaluation bias and the superstar effect."
     doi="https://doi.org/10.1016/j.joep.2024.102776"
     status="Journal of Economic Psychology"
+    published="true"
 >}}
 
 {{< publication
@@ -18,6 +19,7 @@ hideMeta: true
     abstract="Previously limited to mechanical tasks, robots are increasingly performing tasks that require human-like cognitive and emotional capabilities. However, how these anthropomorphized roles impact perceived trustworthiness remains unclear. We examine when and why humans trust robots, using advanced AI-generated video simulations across three service industries. In a large online experiment (N = 2309), we randomized the presence and appearance of robots, the task performed, and human supervision. The task-type analysis shows that perceived trustworthiness is higher when robots perform mechanical tasks than when they perform thinking/feeling tasks that require greater anthropomorphism. The robot appearance analysis demonstrates that physical design does not influence trust in fully-automated environments. Additionally, we find that emphasizing human supervision mitigates the trust deficit associated with robotization. These findings extend the uncanny valley theory beyond physical appearance to cognitive and emotional anthropomorphism, challenge linear conceptions of anthropomorphism, and underscore the importance of human presence in fostering trust in service environments. These results suggest that phased introduction of robots and emphasis on human supervision can preserve trust in increasingly automated service environments."
     doi="https://doi.org/10.1016/j.socec.2026.102563"
     status="Journal of Behavioral and Experimental Economics"
+    published="true"
 >}}
 >
 ## Working Papers
