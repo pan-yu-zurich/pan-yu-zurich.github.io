@@ -42,7 +42,7 @@
 
 .pub-card {
   perspective: 2000px;
-  min-height: 340px;
+  min-height: 440px;
   outline: none;
 }
 .pub-card.pub-flippable {
@@ -57,7 +57,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 340px;
+  min-height: 440px;
   transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
 }
@@ -103,7 +103,7 @@
 /* --- Front face: text on top, small decorative image at bottom (Maréchal-style) --- */
 .pub-images {
   width: 100%;
-  height: 100px;
+  height: 140px;
   flex-shrink: 0;
   overflow: hidden;
   background: transparent;
@@ -111,7 +111,7 @@
   align-items: center;
   justify-content: center;
   margin-top: auto;
-  padding: 6px 22px 18px;
+  padding: 8px 22px 20px;
 }
 .pub-images img {
   max-width: 100%;
@@ -130,23 +130,23 @@
   filter: saturate(1);
 }
 .pub-images-two {
-  gap: 12px;
-  padding: 6px 18px 18px;
+  gap: 14px;
+  padding: 8px 18px 20px;
 }
 .pub-images-two img {
-  max-width: calc(50% - 6px);
+  max-width: calc(50% - 7px);
 }
 
 .pub-front-body {
-  padding: 26px 26px 14px;
+  padding: 30px 30px 16px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 /* Cards without image: body fills the whole card */
 .pub-card:not(.pub-has-image) .pub-front-body {
   flex: 1;
-  padding-bottom: 28px;
+  padding-bottom: 32px;
 }
 
 .pub-front-meta {
