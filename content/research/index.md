@@ -25,8 +25,8 @@ hideMeta: true
     doi="https://doi.org/10.1016/j.socec.2026.102563"
     status="Journal of Behavioral and Experimental Economics"
     published="true"
-    image="/images/paper3.png"
-    imageAlt="Perceived trustworthiness of robots across task types"
+    image="/images/robots.png"
+    imageAlt="AI-generated robot housekeeper and receptionist scenes"
 >}}
 
 </div>
@@ -41,6 +41,8 @@ hideMeta: true
     abstract=""
     presentations="June 2025, UZH Workshop on Sports, Economics, and Natural Experiments; August 2025, 16th ESEA Conference on Sport Economics; September 2025, AMD Publishing and Paper Development Workshop"
     status="Revise & Resubmit"
+    image="/images/chinese_football.png"
+    imageAlt="Career survival curves for Chinese footballers"
 >}}
 
 {{< publication
