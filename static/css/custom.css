@@ -1,19 +1,17 @@
+/* ============================================
+   News items — warm Luka palette
+   ============================================ */
 .news-item {
   padding: 14px 18px;
   margin-bottom: 16px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .news-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
-.news-lightest { background-color: #d9ebfd99; }
-.news-light { background-color: #c3e2ff99; }
-.news-mid { background-color: #97c8f899; }
-.news-dark { background-color: #72acef99; }
-.news-darkest { background-color: #4c8ee699; }  /* ← Add this */
 .news-item em {
   font-style: normal;
   font-weight: 500;
@@ -23,4 +21,91 @@
 }
 .news-item a {
   text-decoration: underline;
+}
+
+/* ============================================
+   Research page — publication cards
+   Inspired by Luka homepage template
+   ============================================ */
+.publication-container {
+  position: relative;
+  background: var(--color-secondary-bg) !important;
+  border-left: 3px solid var(--color-eureka);
+  border-radius: 6px;
+  padding: 18px 22px !important;
+  margin-bottom: 18px !important;
+  box-shadow: 0 1px 3px rgba(61, 57, 41, 0.04), 0 1px 2px rgba(61, 57, 41, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.25s ease;
+}
+.publication-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(61, 57, 41, 0.08), 0 2px 6px rgba(61, 57, 41, 0.05);
+}
+.publication-container h2 {
+  font-size: 1.08rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4;
+  color: var(--color-primary-text) !important;
+  margin: 0 0 8px !important;
+}
+.publication-container h2 a {
+  color: inherit !important;
+  transition: color 0.2s ease;
+}
+.publication-container h2 a:hover {
+  color: var(--color-eureka) !important;
+}
+.publication-container > div > p {
+  font-size: 0.92rem;
+  color: var(--color-secondary-text);
+  margin-bottom: 8px !important;
+}
+.publication-container details summary {
+  cursor: pointer;
+  color: var(--color-eureka);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+.publication-container details[open] summary {
+  margin-bottom: 6px;
+}
+.publication-container details p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-secondary-text);
+}
+
+/* Status badge — softer warm-toned palette */
+.publication-container .inline-block {
+  border-radius: 999px !important;
+  padding: 3px 12px !important;
+  font-size: 0.76rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.02em;
+}
+
+/* Presentations / DOI labels */
+.publication-container .font-medium {
+  color: var(--color-primary-text);
+  font-weight: 600;
+}
+
+/* ============================================
+   Section titles — accent underline
+   ============================================ */
+.prose h2,
+article h2,
+.markdown h2 {
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-top: 2.2rem !important;
+  margin-bottom: 1.1rem !important;
+  border-bottom: 2px solid var(--color-eureka);
+  color: var(--color-eureka);
+  font-weight: 600;
+}
+
+/* Keep news shortcode title styling clean (exempt) */
+.news-item .text-lg {
+  color: var(--color-primary-text);
 }

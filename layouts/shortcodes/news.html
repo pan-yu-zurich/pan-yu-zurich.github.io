@@ -1,20 +1,4 @@
-<div class="news-item mb-4 rounded-lg p-6 shadow-md border-l-4
-    {{ $color := .Get "color" }}
-    {{ if eq $color "lightest" }}
-        border-teal-200
-    {{ else if eq $color "light" }}
-        border-teal-300
-    {{ else if eq $color "mid" }}
-        border-teal-400
-    {{ else if eq $color "dark" }}
-        border-teal-500
-    {{ else if eq $color "darkest" }}
-        border-teal-600
-    {{ else }}
-        border-slate-300
-    {{ end }}
-    bg-transparent text-inherit
-">
+<div class="news-item mb-4 rounded-lg p-6 shadow-md" style="border-left: 4px solid var(--color-eureka); background: var(--color-secondary-bg);">
     <div class="flex flex-wrap items-baseline">
         <span class="text-lg font-medium mr-1">{{ .Get "time" }}</span>
         <span class="text-lg font-bold"> - {{ .Get "title" }}</span>
