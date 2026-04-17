@@ -34,15 +34,11 @@ onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.
           {{- end -}}
         </h3>
         <p class="pub-authors">{{ $authors | safeHTML }}</p>
+        {{ if $status }}
         <div class="pub-front-meta">
-          {{ if $status }}<span class="status-badge {{ $statusClass }}">{{ $status }}</span>{{ end }}
-          {{ if $hasBack }}
-          <span class="flip-hint-inline" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M12 6V3L8 7l4 4V8c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 14c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 9.74A7.93 7.93 0 0 0 4 14c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
-            Abstract
-          </span>
-          {{ end }}
+          <span class="status-badge {{ $statusClass }}">{{ $status }}</span>
         </div>
+        {{ end }}
       </div>
       {{ if $image }}
       <div class="pub-images{{ if $image2 }} pub-images-two{{ end }}">
