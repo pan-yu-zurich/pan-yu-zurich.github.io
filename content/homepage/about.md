@@ -60,4 +60,4 @@ I earned my Ph.D. in Management and Economics from the University of Zurich in O
   content="'When Robots Think and Feel, Will Trust Disappear?' with Gomez-Gonzalez, Clochard, and Dietl is out in JBEE (Vol. 122). <a href='https://doi.org/10.1016/j.socec.2026.102563' target='_blank'>[Link]</a>"
 >}}
 <!-- color: lightest, light, mid, dark, darkest -->
-<link rel="stylesheet" href="css/custom.css"><br>
+<link rel="stylesheet" href="css/custom.css?v=20260417"><br>
