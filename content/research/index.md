@@ -4,6 +4,9 @@ hideMeta: true
 ---
 
 ## Publications
+
+<div class="pub-grid">
+
 {{< publication
     title="The superstar effect on perceived performance in professional football: An online experiment"
     authors="<a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a><sup>†</sup>, <a href='https://www.business.uzh.ch/de/research/professorships/som/Team/Marco-Henriques-Pereira.html'><strong>Marco Henriques Pereira</strong></a>, <a href='https://www.carlosgomez-gonzalez.com/'><strong>Carlos Gomez-Gonzalez</strong></a>, <a href='https://www.business.uzh.ch/de/research/professorships/som/Team/helmutdietl.html'><strong>Helmut M. Dietl</strong></a>"
@@ -11,6 +14,8 @@ hideMeta: true
     doi="https://doi.org/10.1016/j.joep.2024.102776"
     status="Journal of Economic Psychology"
     published="true"
+    image="/images/paper2.png"
+    imageAlt="Premier League 21/22 player ratings vs. Instagram followers"
 >}}
 
 {{< publication
@@ -20,16 +25,22 @@ hideMeta: true
     doi="https://doi.org/10.1016/j.socec.2026.102563"
     status="Journal of Behavioral and Experimental Economics"
     published="true"
+    image="/images/paper3.png"
+    imageAlt="Perceived trustworthiness of robots across task types"
 >}}
->
+
+</div>
+
 ## Working Papers
 
+<div class="pub-grid">
+
 {{< publication
-title="Chinese Football"
-authors="<a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a><sup>†</sup>, <a href='https://www.business.uzh.ch/de/research/professorships/som/Team/Marco-Henriques-Pereira.html'><strong>Marco Henriques Pereira</strong></a>"
-abstract=""
-presentations="June 2025, UZH Workshop on Sports, Economics, and Natural Experiments; August 2025, 16th ESEA Conference on Sport Economics; September 2025, AMD Publishing and Paper Development Workshop"
-status="Revise & Resubmit"
+    title="Chinese Football"
+    authors="<a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a><sup>†</sup>, <a href='https://www.business.uzh.ch/de/research/professorships/som/Team/Marco-Henriques-Pereira.html'><strong>Marco Henriques Pereira</strong></a>"
+    abstract=""
+    presentations="June 2025, UZH Workshop on Sports, Economics, and Natural Experiments; August 2025, 16th ESEA Conference on Sport Economics; September 2025, AMD Publishing and Paper Development Workshop"
+    status="Revise & Resubmit"
 >}}
 
 {{< publication
@@ -38,6 +49,9 @@ status="Revise & Resubmit"
     abstract="We employ a novel experimental design to investigate how gender operates through distinct mechanisms in evaluating professional success versus failure. Using advanced artificial intelligence computer-generated imagery and motion capture techniques, we manipulate the perceived gender of tennis players while maintaining identical performances. Involving 3,755 representative U.S. Prolific participants, our experiments reveal how gender transforms between serving as a reference point in success evaluation and becoming a source of attribution bias in failure assessment. Study 1 examines physically demanding successful performances, showing that evaluators appropriately use gender as a reference point for calibrating expectations based on relevant group-level differences. Study 2 investigates basic execution errors where such differences are irrelevant, uncovering how gender becomes a mechanism for discrimination: identical mistakes receive significantly different evaluations based solely on perceived gender - errors are judged more harshly when perceived as made by women and more leniently when perceived as made by men. These findings advance our understanding of when gender appropriately informs versus inappropriately biases performance evaluations, extending regulatory focus theory's prevention-focus expectations and role congruity theory's status beliefs to explain this contextual transformation. (Draft available upon request)"
     presentations="June 2024, UZH Workshop on Sports, Economics, and Natural Experiments; October 2024, UZH Business Research Seminar; May 2025, International Meeting on Experimental and Behavioral Social Sciences"
     status="Under Review"
+    image="/images/paper4_1.png"
+    image2="/images/paper4_2.png"
+    imageAlt="AI-generated tennis players — gender-manipulated Wimbledon scene"
 >}}
 
 {{< publication
@@ -46,20 +60,26 @@ status="Revise & Resubmit"
     abstract="We study whether work practices adopted in recent history in agriculture influence the political empowerment of women in a European country. Focusing on Italy, we study the case of female rice weeders and their successful history of unionization and mobilization for better working conditions. Relying on an instrumental variable strategy to predict quasi-exogenous variation in rice production, we test whether the historical presence of female rice weeders predicts differences in measures of political empowerment during the second half of the XX century. We find that towns where rice production was historically relevant had higher support for divorce in the 1974 referendum, have more women in politics, and are more likely to have a nursery school. Our results suggest the importance of collective action of working women to achieve persistent female political empowerment. (Draft available upon request)"
     presentations="September 2022, SASCA Ph.D. Conference (Miriam Venturini*); August 2023, EEA-ESEM (Luca Bagnato*); May 2024, Brown Bag seminar at University of Milan (Luca Bagnato*); April 2024, EHS Annual Conference (Luca Bagnato*); February 2025, IdEP Junior Seminar at Università della Svizzera italiana (Luca Bagnato*)"
     status="In Progress"
+    image="/images/paper1.png"
+    imageAlt="Italian Mondine historical photograph"
 >}}
+
+</div>
 
 ## Selected Work in Progress
 
+<div class="pub-grid">
+
 {{< publication
-title="Discrimination"
-authors="<a href='https://sites.google.com/view/gwen-jiro-clochard/home'><strong>Gwen-Jirō Clochard</strong></a>, <a href='https://sites.google.com/site/yoshiokamijo/'><strong>Yoshio Kamijo</strong></a>, <a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a>, <a href='https://shohei-yamamoto.com/'><strong>Shohei Yamamoto</strong></a>"
-abstract=""
-partnership="<a href='https://elevenlabs.io' target='_blank'><img src='/images/elevenlabs-logo-black.png' alt='ElevenLabs' class='inline h-4 align-middle' /></a>"
-presentations=""
-status="In Progress"
+    title="Discrimination"
+    authors="<a href='https://sites.google.com/view/gwen-jiro-clochard/home'><strong>Gwen-Jirō Clochard</strong></a>, <a href='https://sites.google.com/site/yoshiokamijo/'><strong>Yoshio Kamijo</strong></a>, <a href='https://pan-yu-zurich.github.io/'><strong>Yu Pan</strong></a>, <a href='https://shohei-yamamoto.com/'><strong>Shohei Yamamoto</strong></a>"
+    abstract=""
+    partnership="<a href='https://elevenlabs.io' target='_blank'><img src='/images/elevenlabs-logo-black.png' alt='ElevenLabs' class='inline h-4 align-middle' /></a>"
+    presentations=""
+    status="In Progress"
 >}}
 
-
+</div>
 
 <p class="text-sm text-gray-600 italic mt-6 text-right"><sup>†</sup> Indicates corresponding author</p>
 <p class="text-sm text-gray-600 italic mt-2 text-right">* indicates presentation by coauthor</p>

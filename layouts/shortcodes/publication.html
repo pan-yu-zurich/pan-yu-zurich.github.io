@@ -6,6 +6,9 @@
 {{ $presentations := .Get "presentations" }}
 {{ $doi := .Get "doi" }}
 {{ $status := .Get "status" }}
+{{ $image := .Get "image" }}
+{{ $image2 := .Get "image2" }}
+{{ $imageAlt := .Get "imageAlt" | default $title }}
 {{ $published := eq (.Get "published") "true" }}
 {{ $openByDefault := eq (.Get "openByDefault") "true" }}
 {{ $hasBack := or (ne $abstract "") (ne $partnership "") (ne $presentations "") (ne $doi "") }}
@@ -17,28 +20,36 @@
 {{ else if eq $status "In Progress" }}{{ $statusClass = "status-progress" }}
 {{ end }}
 
-<div class="pub-card{{ if $hasBack }} pub-flippable{{ end }}{{ if $openByDefault }} flipped{{ end }}"
+<div class="pub-card{{ if $hasBack }} pub-flippable{{ end }}{{ if $openByDefault }} flipped{{ end }}{{ if $image }} pub-has-image{{ end }}"
 {{- if $hasBack }} onclick="this.classList.toggle('flipped')" role="button" tabindex="0" aria-label="Toggle abstract"
 onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped');}"{{ end }}>
   <div class="pub-inner">
     <div class="pub-face pub-front">
-      <h3 class="pub-title">
-        {{- if $url -}}
-          <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">{{ $title }}</a>
-        {{- else -}}
-          {{ $title }}
-        {{- end -}}
-      </h3>
-      <p class="pub-authors">{{ $authors | safeHTML }}</p>
-      {{ if $status }}
-      <div class="pub-front-meta">
-        <span class="status-badge {{ $statusClass }}">{{ $status }}</span>
+      {{ if $image }}
+      <div class="pub-images{{ if $image2 }} pub-images-two{{ end }}">
+        <img src="{{ $image }}" alt="{{ $imageAlt }}" loading="lazy">
+        {{ if $image2 }}<img src="{{ $image2 }}" alt="{{ $imageAlt }}" loading="lazy">{{ end }}
       </div>
       {{ end }}
+      <div class="pub-front-body">
+        <h3 class="pub-title">
+          {{- if $url -}}
+            <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">{{ $title }}</a>
+          {{- else -}}
+            {{ $title }}
+          {{- end -}}
+        </h3>
+        <p class="pub-authors">{{ $authors | safeHTML }}</p>
+        {{ if $status }}
+        <div class="pub-front-meta">
+          <span class="status-badge {{ $statusClass }}">{{ $status }}</span>
+        </div>
+        {{ end }}
+      </div>
       {{ if $hasBack }}
       <div class="flip-hint" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M12 6V3L8 7l4 4V8c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 14c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 9.74A7.93 7.93 0 0 0 4 14c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
-        <span>Click for abstract</span>
+        <span>Abstract</span>
       </div>
       {{ end }}
     </div>
@@ -46,8 +57,8 @@ onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.
     {{ if $hasBack }}
     <div class="pub-face pub-back">
       <div class="pub-back-content">
+        <h4 class="pub-back-title">{{ $title }}</h4>
         {{ if $abstract }}
-        <h4 class="pub-back-label">Abstract</h4>
         <div class="pub-abstract">{{ $abstract | markdownify }}</div>
         {{ end }}
         {{ if $partnership }}
@@ -67,7 +78,7 @@ onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.
       </div>
       <div class="flip-hint flip-hint-back" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M12 6V3L8 7l4 4V8c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 14c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 9.74A7.93 7.93 0 0 0 4 14c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
-        <span>Click to flip back</span>
+        <span>Flip back</span>
       </div>
     </div>
     {{ end }}
