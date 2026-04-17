@@ -12,5 +12,5 @@ hideMeta: true
 ## Invited Lecture
 - **2025 Spring&Fall:** Current Socio-Economic Issues and Challenges in Sports (UNIL)
 
-<link rel="stylesheet" href="/css/custom.css?v=20260417">
+<link rel="stylesheet" href="/css/custom.css?v=20260417b">
 
