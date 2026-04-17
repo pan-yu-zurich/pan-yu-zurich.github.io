@@ -1,10 +1,8 @@
 # Warm minimal palette adapted from the Luka homepage template
 # https://github.com/wzsyyh/luka-homepage-template
 fonts:
-  - name: Lora
-    googleFonts: Lora:wght@400;600;700
-  - name: Noto Serif SC
-    googleFonts: Noto+Serif+SC:wght@400;600;700
+  - name: Inter
+    googleFonts: Inter:wght@300;400;500;600;700
 
 colors:
   light:
