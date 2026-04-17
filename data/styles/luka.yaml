@@ -1,0 +1,25 @@
+# Warm minimal palette adapted from the Luka homepage template
+# https://github.com/wzsyyh/luka-homepage-template
+fonts:
+  - name: Lora
+    googleFonts: Lora:wght@400;600;700
+  - name: Noto Serif SC
+    googleFonts: Noto+Serif+SC:wght@400;600;700
+
+colors:
+  light:
+    theme: "#c2714f"
+    primaryBackground: "#faf9f7"
+    secondaryBackground: "#ffffff"
+    tertiaryBackground: "#f0ece5"
+    primaryText: "#3d3929"
+    secondaryText: "#8c8577"
+    tertiaryText: "#b0a99a"
+  dark:
+    theme: "#e28a67"
+    primaryBackground: "#1a1917"
+    secondaryBackground: "#22211e"
+    tertiaryBackground: "#2a2824"
+    primaryText: "#d1cec7"
+    secondaryText: "#9b9488"
+    tertiaryText: "#7a7468"
