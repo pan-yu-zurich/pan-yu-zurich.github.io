@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Yu Pan — University of Zurich</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root {
+    --paper: #F7F3EC;
+    --card:  #EFE8D9;
+    --ink:   #1C1917;
+    --muted: #6B5E52;
+    --rule:  #D9D0C0;
+    --accent:#7A2E1F;
+    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+    --sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #14110D;
+      --card:  #1E1A14;
+      --ink:   #EFE7D6;
+      --muted: #8E8270;
+      --rule:  #3A3226;
+      --accent:#D98E6A;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--paper); color:var(--ink); font-family:var(--serif); font-size:17px; line-height:1.7; }
+  a { color:inherit; text-decoration:none; }
+  a.link { color:var(--accent); border-bottom:1px solid var(--accent); padding-bottom:1px; }
+  a.link:hover { opacity:0.75; }
+  .sans { font-family:var(--sans); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 48px; }
+
+  /* Header */
+  header.site {
+    padding: 28px 0;
+    border-bottom: 1px double var(--rule);
+  }
+  header.site .row {
+    display:flex; justify-content:space-between; align-items:baseline; gap:24px;
+    flex-wrap: wrap;
+  }
+  header.site .dept {
+    font-family:var(--sans); font-size:11px; letter-spacing:0.2em;
+    text-transform:uppercase; color:var(--muted);
+  }
+  header.site nav {
+    display:flex; gap:28px; font-family:var(--sans); font-size:13px;
+  }
+  header.site nav a { color:var(--muted); }
+  header.site nav a.active { color:var(--ink); border-bottom:1px solid var(--ink); padding-bottom:2px; }
+  header.site nav a:hover { color:var(--ink); }
+
+  /* Title block */
+  .title-block { text-align:center; padding: 112px 0 72px; }
+  .title-block .kicker {
+    font-family:var(--sans); font-size:11px; letter-spacing:0.3em;
+    text-transform:uppercase; color:var(--accent); margin-bottom: 36px;
+  }
+  .title-block h1 {
+    font-size: 104px; font-weight: 400; margin: 0;
+    letter-spacing: -0.02em; line-height: 1;
+  }
+  .title-block .tagline {
+    font-size: 23px; font-style: italic; font-weight: 400;
+    color: var(--ink); max-width: 720px; margin: 28px auto 0;
+    line-height: 1.45;
+  }
+  .title-block .est {
+    margin-top: 44px; display:inline-flex; align-items:center; gap:16px;
+    font-family:var(--sans); font-size:12px; color:var(--muted);
+    letter-spacing:0.1em; text-transform:uppercase;
+  }
+  .title-block .est .dash { width:40px; height:1px; background:var(--muted); }
+
+  /* Intro + portrait */
+  .intro {
+    padding: 56px 0; display:grid; grid-template-columns: 240px 1fr; gap: 64px;
+    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+  }
+  .portrait {
+    width:240px; height:300px; border:1px solid var(--rule);
+    background: repeating-linear-gradient(45deg, #E8E0D1 0 6px, #DED3C0 6px 12px);
+    display:flex; align-items:flex-end; padding:10px; border-radius:2px;
+    font-family:ui-monospace, monospace; font-size:10px; color:var(--muted);
+  }
+  @media (prefers-color-scheme: dark) {
+    .portrait { background: repeating-linear-gradient(45deg, #2A241C 0 6px, #1E1A14 6px 12px); }
+  }
+  .intro .addr {
+    font-family:var(--sans); font-size:11px; color:var(--muted);
+    margin-top:14px; line-height:1.6; text-transform:uppercase; letter-spacing:0.08em;
+  }
+  .intro .body .section-label {
+    font-family:var(--sans); font-size:13px; color:var(--accent);
+    letter-spacing:0.18em; text-transform:uppercase; margin-bottom: 20px;
+  }
+  .intro .body p { font-size:19px; line-height:1.65; margin:0 0 18px; }
+  .intro .body p:last-of-type { margin-bottom:0; color: var(--muted); }
+  .intro .links {
+    margin-top:28px; display:flex; gap:20px; flex-wrap:wrap;
+    font-family:var(--sans); font-size:13px;
+  }
+
+  /* News */
+  .news {
+    padding: 72px 0; text-align:center;
+    border-bottom:1px solid var(--rule);
+  }
+  .news .kicker {
+    font-family:var(--sans); font-size:11px; letter-spacing:0.25em;
+    text-transform:uppercase; color:var(--muted); margin-bottom: 20px;
+  }
+  .news .lead {
+    font-size: 30px; font-style: italic; font-weight: 400;
+    line-height: 1.4; max-width: 820px; margin: 0 auto 18px;
+    letter-spacing: -0.01em;
+  }
+  .news .meta { font-size:15px; color:var(--muted); }
+  .news .venue { font-size:15px; font-style: italic; margin-top:4px; }
+  .news .cta {
+    margin-top:26px; font-family:var(--sans); font-size:12px;
+    color:var(--accent); letter-spacing:0.1em; text-transform:uppercase;
+  }
+
+  /* Shared section */
+  .section-title {
+    text-align:center; margin: 0 0 48px;
+  }
+  .section-title .tag {
+    font-family:var(--sans); font-size:11px; letter-spacing:0.25em;
+    text-transform:uppercase; color:var(--accent); margin-bottom:12px;
+  }
+  .section-title h2 {
+    font-size: 44px; font-weight: 400; letter-spacing: -0.02em;
+    margin:0;
+  }
+  .section-title .sub {
+    font-size: 15px; font-style: italic; color: var(--muted); margin-top: 8px;
+  }
+
+  /* Footer */
+  footer.site {
+    padding: 36px 0; border-top: 1px double var(--rule);
+    font-family:var(--sans); font-size:11px; color:var(--muted);
+    letter-spacing:0.15em; text-transform:uppercase;
+  }
+  footer.site .row { display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; }
+
+  /* Research page — chapter style */
+  .chapter {
+    padding: 88px 0 72px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .chapter:last-of-type { border-bottom: none; }
+  .chapter-head {
+    display:grid; grid-template-columns: 140px 1fr; gap: 40px;
+    align-items:flex-start; margin-bottom: 44px;
+  }
+  .chapter-num-label {
+    font-family:var(--sans); font-size:12px; color:var(--muted);
+    letter-spacing:0.25em; text-transform:uppercase; margin-bottom:10px;
+    font-style: italic;
+  }
+  .chapter-num {
+    font-size: 108px; font-weight: 400; letter-spacing: -0.03em;
+    line-height: 0.9; color: var(--accent);
+  }
+  .chapter-meta {
+    font-family:var(--sans); font-size:12px; color:var(--accent);
+    letter-spacing: 0.2em; text-transform:uppercase; margin-bottom: 14px;
+  }
+  .chapter-title {
+    font-size: 40px; font-weight: 400; letter-spacing: -0.02em;
+    line-height: 1.15; margin: 0 0 8px;
+  }
+  .chapter-sub {
+    font-size: 22px; font-style: italic; font-weight: 300;
+    color: var(--ink); letter-spacing: -0.01em; margin-bottom: 16px; opacity: 0.85;
+  }
+  .chapter-venue { font-size: 15px; font-style: italic; color: var(--muted); }
+  .chapter-body {
+    font-size: 17px; line-height: 1.75; max-width: 840px; margin: 0 auto;
+  }
+  .chapter-links {
+    margin-top: 32px; display:flex; justify-content:center; gap: 28px; flex-wrap:wrap;
+    font-family:var(--sans); font-size:12px; letter-spacing:0.15em;
+    text-transform:uppercase;
+  }
+  .chapter-links a { color: var(--accent); border-bottom:1px solid var(--accent); padding-bottom:2px; }
+
+  /* Group heading */
+  .group-heading {
+    text-align:center; padding: 64px 0 8px; position:relative;
+  }
+  .group-heading .roman {
+    font-family:var(--sans); font-size:11px; letter-spacing:0.35em;
+    text-transform:uppercase; color:var(--muted); margin-bottom:8px;
+  }
+  .group-heading h3 {
+    font-size: 34px; font-weight: 400; letter-spacing: -0.015em;
+    margin: 0 0 4px; font-style: italic;
+  }
+  .group-heading .count { font-size: 13px; color: var(--muted); font-style: italic; }
+  .ornament {
+    display:flex; align-items:center; justify-content:center;
+    gap:14px; margin: 24px 0 0;
+  }
+  .ornament .line { width:120px; height:1px; background:var(--rule); }
+  .ornament .dot { width:6px; height:6px; background:var(--accent); transform:rotate(45deg); }
+
+  /* Teaching */
+  .teaching-grid {
+    max-width: 900px; margin: 0 auto;
+    display:grid; grid-template-columns: 1fr 1fr; gap: 32px 48px;
+  }
+  .teach-card .term {
+    font-family:var(--sans); font-size:11px; color:var(--accent);
+    letter-spacing:0.15em; text-transform:uppercase; margin-bottom:8px;
+  }
+  .teach-card .ttitle {
+    font-size: 24px; font-weight: 400; letter-spacing: -0.015em; margin-bottom: 4px;
+  }
+  .teach-card .role { font-size:15px; font-style: italic; color:var(--muted); }
+
+  .list-flat {
+    max-width: 900px; margin: 0 auto;
+  }
+  .list-flat .row {
+    padding: 22px 0; border-bottom: 1px solid var(--rule);
+    display:grid; grid-template-columns: 140px 1fr; gap: 32px; align-items: baseline;
+  }
+  .list-flat .row:last-child { border-bottom: none; }
+  .list-flat .left {
+    font-family:var(--sans); font-size:12px; color:var(--accent);
+    letter-spacing:0.15em; text-transform:uppercase;
+  }
+  .list-flat .t { font-size: 20px; font-weight: 400; letter-spacing:-0.01em; margin-bottom:4px; }
+  .list-flat .s { font-size:14px; font-style:italic; color:var(--muted); }
+
+  /* Publication list — compact, book-style */
+  .pub-list { max-width: 860px; margin: 0 auto; padding: 32px 0 0; }
+  .pub {
+    display:grid; grid-template-columns: 120px 1fr 70px; gap: 28px;
+    padding: 22px 0; border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .pub:last-child { border-bottom: none; }
+  .pub-left {
+    font-family: var(--sans); font-size: 12px; color: var(--accent);
+    letter-spacing: 0.15em; text-transform: uppercase; line-height: 1.7;
+  }
+  .pub-status {
+    font-family: var(--sans); font-size: 10px; color: var(--muted);
+    letter-spacing: 0.12em; text-transform: uppercase;
+  }
+  .pub-title {
+    font-size: 19px; font-weight: 400; letter-spacing: -0.01em;
+    line-height: 1.4; margin-bottom: 6px;
+  }
+  .pub-authors { font-size: 14px; color: var(--ink); line-height: 1.6; margin-bottom: 4px; }
+  .pub-authors b { font-weight: 500; }
+  .pub-venue { font-size: 14px; color: var(--muted); line-height: 1.55; font-style: italic; }
+  .pub-venue i { font-style: italic; }
+  a.coauthor { color: var(--ink); border-bottom: 1px dotted var(--muted); padding-bottom: 1px; }
+  a.coauthor:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .pub-right { text-align: right; font-family: var(--sans); font-size: 12px; }
+
+  /* Back link */
+  .backlink {
+    display:inline-flex; gap:8px; align-items:center;
+    font-family:var(--sans); font-size:12px; letter-spacing:0.15em;
+    text-transform:uppercase; color:var(--muted); margin-top: 12px;
+  }
+  .backlink:hover { color: var(--accent); }
+
+  /* Responsive */
+  @media (max-width: 820px) {
+    .pub { grid-template-columns: 1fr; gap: 6px; }
+    .pub-right { text-align: left; }
+    .wrap { padding: 0 28px; }
+    .title-block { padding: 72px 0 48px; }
+    .title-block h1 { font-size: 64px; }
+    .title-block .tagline { font-size: 18px; }
+    .intro { grid-template-columns: 1fr; gap:32px; padding: 40px 0; }
+    .portrait { width: 180px; height: 225px; margin: 0 auto; }
+    .intro .addr { text-align:center; }
+    .intro .links { justify-content:center; }
+    .news .lead { font-size: 22px; }
+    .section-title h2 { font-size: 32px; }
+    .chapter-head { grid-template-columns: 1fr; gap: 8px; }
+    .chapter-num { font-size: 72px; }
+    .chapter-title { font-size: 28px; }
+    .chapter-sub { font-size: 18px; }
+    .teaching-grid { grid-template-columns: 1fr; gap: 28px; }
+    .list-flat .row { grid-template-columns: 1fr; gap: 8px; }
+    header.site nav { gap: 18px; font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap row">
+    <div class="dept">Universität Zürich · Department of Business Administration</div>
+    <nav>
+      <a href="#" class="active" data-nav="home">About</a>
+      <a href="#" data-nav="research">Research</a>
+      <a href="#" data-nav="teaching">Teaching</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="site">
+  <div class="wrap row">
+    <span>© Anno MMXXVI · Yu Pan</span>
+    <span>Zürich</span>
+    <span>yu.pan@business.uzh.ch</span>
+  </div>
+</footer>
+
+<script>
+// ----- Data from CV -----
+const PAGES = {
+  home: renderHome,
+  research: renderResearch,
+  teaching: renderTeaching,
+};
+
+function el(html) {
+  const t = document.createElement('template');
+  t.innerHTML = html.trim();
+  return t.content.firstElementChild;
+}
+
+function renderHome() {
+  return `
+    <div class="wrap">
+      <section class="title-block">
+        <div class="kicker">·  Postdoctoral Researcher  ·</div>
+        <h1>Yu Pan</h1>
+        <div class="tagline">Economist of sport, experiment, and AI.</div>
+        <div class="est"><span class="dash"></span>Zürich · Since 2024<span class="dash"></span></div>
+      </section>
+
+      <section class="intro">
+        <div>
+          <div class="portrait">portrait.jpg</div>
+          <div class="addr">
+            Plattenstrasse 14<br/>
+            8032 Zürich<br/>
+            Switzerland
+          </div>
+        </div>
+        <div class="body">
+          <div class="section-label">Introduction</div>
+          <p>
+            I am a Postdoctoral Researcher in the Department of Business
+            Administration at the University of Zurich. My research focuses on
+            <i>sports economics</i> and <i>experimental economics</i>.
+          </p>
+          <p>
+            I earned my Ph.D. in Management and Economics from the University of
+            Zurich in October 2024. Prior to my doctoral studies, I worked as a
+            short-term consultant at the World Bank and as a research assistant at
+            ETH Zurich.
+          </p>
+          <div class="links">
+            <a class="link" href="#" data-nav="research">Research →</a>
+            <a class="link" href="#" data-nav="teaching">Teaching →</a>
+            <a class="link" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="link" href="mailto:yu.pan@business.uzh.ch">Email</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="kicker">Latest Publication — 2026</div>
+        <div class="lead">"When Robots Think and Feel, Will Trust Disappear? Evidence from an Online Experiment"</div>
+        <div class="meta">Yu Pan, Carlos Gomez-Gonzalez, Gwen-Jirō Clochard, and Helmut M. Dietl</div>
+        <div class="venue">Journal of Behavioral and Experimental Economics, Vol. 122, 102563</div>
+        <div class="cta">
+          <a class="link" href="https://doi.org/10.1016/j.socec.2026.102563" target="_blank" rel="noopener">[ Read the Paper ]</a>
+        </div>
+      </section>
+    </div>
+  `;
+}
+
+function renderResearch() {
+  const publications = [
+    {
+      year: '2025',
+      status: 'Published',
+      title: 'The Superstar Effect on Perceived Performance in Professional Football: An Online Experiment',
+      venue: 'Journal of Economic Psychology, 106, 102776',
+      authors: 'Yu Pan, Marco Henriques Pereira, Carlos Gomez-Gonzalez, Helmut M. Dietl',
+      link: 'https://doi.org/10.1016/j.joep.2024.102776',
+    },
+    {
+      year: '2026',
+      status: 'Published',
+      title: 'When Robots Think and Feel, Will Trust Disappear? Evidence from an Online Experiment',
+      venue: 'Journal of Behavioral and Experimental Economics, 122, 102563',
+      authors: 'Yu Pan, Carlos Gomez-Gonzalez, Gwen-Jirō Clochard, Helmut M. Dietl',
+      link: 'https://doi.org/10.1016/j.socec.2026.102563',
+    },
+  ];
+
+  const workingPapers = [
+    {
+      status: 'Job Market Paper',
+      title: 'Tipping the Fair Scales: Scale Design and Compatriot Bias in Figure Skating',
+      authors: 'Yu Pan',
+    },
+    {
+      status: 'Submitted',
+      title: 'Learning from the Best — Or Not? Why Imported Talent Failed in Chinese Football',
+      authors: 'Yu Pan, Marco Henriques Pereira',
+      note: 'Revise & Resubmit at Academy of Management Discoveries',
+    },
+    {
+      status: 'Submitted',
+      title: 'Rewarding Men More for Success, Penalizing Women More for Failure?',
+      authors: 'Yu Pan, Carlos Gomez-Gonzalez, Helmut M. Dietl',
+    },
+    {
+      status: 'Submitted',
+      title: 'Agricultural Practices, Organized Workers, and Female Political Empowerment: Evidence from Italian Mondine',
+      authors: 'Luca Bagnato, Yu Pan, Miriam Venturini',
+    },
+    {
+      status: 'Submitted',
+      title: 'Upset Losses, Compliant Citizens: Evidence from Chinese Football',
+      authors: 'Yu Pan, Jingwen Yu',
+    },
+    {
+      status: 'Submitted',
+      title: 'When Does Success Breed Success for Women? Evidence from Elite Table Tennis',
+      authors: 'Yu Pan',
+    },
+    {
+      status: 'Submitted',
+      title: 'Bias Where It Matters: Strategic Favoritism in Elite Diving',
+      authors: 'Yu Pan',
+    },
+  ];
+
+  const inProgress = [
+    {
+      title: 'AI Commentary: Bridging the Gender Gap in Football',
+      authors: 'Yu Pan, Carlos Gomez-Gonzalez, Laurel Walzak, Helmut M. Dietl',
+    },
+    {
+      title: 'AI CEO and Worker Performance: A Field Experiment',
+      authors: 'Yu Pan, Johannes Luger, Helmut M. Dietl',
+    },
+    {
+      title: 'Disentangling Beliefs and Taste in Correspondence Studies',
+      authors: 'Gwen-Jirō Clochard, Yoshio Kamijo, Yu Pan, Shohei Yamamoto',
+    },
+  ];
+
+  // Coauthor -> personal website map. Edit these URLs as needed.
+  const COAUTHOR_URLS = {
+    'Carlos Gomez-Gonzalez': 'https://www.carlosgomez-gonzalez.com/',
+    'Gwen-Jirō Clochard': 'https://sites.google.com/view/gwen-jiro-clochard/home',
+    'Helmut M. Dietl': 'https://www.business.uzh.ch/de/research/professorships/som/Team/helmutdietl.html',
+    'Marco Henriques Pereira': 'https://www.business.uzh.ch/de/research/professorships/som/Team/Marco-Henriques-Pereira.html',
+    'Luca Bagnato': 'https://lucabagnato.github.io/',
+    'Miriam Venturini': 'https://miriamventurini.github.io/',
+    'Jingwen Yu': 'https://ibs.bfsu.edu.cn/en/info/3202/1831.htm',
+    'Yoshio Kamijo': 'https://sites.google.com/site/yoshiokamijo/',
+    'Shohei Yamamoto': 'https://shohei-yamamoto.com/',
+    'Laurel Walzak': 'https://www.torontomu.ca/rta/about/rta-faculty/laurel-walzak/',
+    'Johannes Luger': 'https://www.business.uzh.ch/en/research/professorships/evidence-based-strategic-management/team/Chairholder/professor.html',
+  };
+
+  const linkAuthors = (authorsStr) => authorsStr.split(',').map(raw => {
+    const name = raw.trim();
+    if (name === 'Yu Pan') return `<b>${name}</b>`;
+    const url = COAUTHOR_URLS[name];
+    if (url) return `<a class="coauthor" href="${url}" target="_blank" rel="noopener">${name}</a>`;
+    return name;
+  }).join(', ');
+
+  const pubRow = (p) => `
+    <div class="pub">
+      <div class="pub-left">${p.year || ''}<br/><span class="pub-status">${p.status || ''}</span></div>
+      <div class="pub-body">
+        <div class="pub-title">${p.title}</div>
+        <div class="pub-authors">${linkAuthors(p.authors)}</div>
+        ${p.venue ? `<div class="pub-venue"><i>${p.venue}</i></div>` : ''}
+        ${p.note ? `<div class="pub-venue"><i>${p.note}</i></div>` : ''}
+      </div>
+      <div class="pub-right">${p.link ? `<a class="link" href="${p.link}" target="_blank" rel="noopener">Link</a>` : ''}</div>
+    </div>
+  `;
+
+  const wpRow = (p) => `
+    <div class="pub">
+      <div class="pub-left"><span class="pub-status">${p.status}</span></div>
+      <div class="pub-body">
+        <div class="pub-title">${p.title}</div>
+        <div class="pub-authors">${linkAuthors(p.authors)}</div>
+        ${p.note ? `<div class="pub-venue"><i>${p.note}</i></div>` : ''}
+      </div>
+      <div class="pub-right"></div>
+    </div>
+  `;
+
+  return `
+    <div class="wrap">
+      <section class="title-block">
+        <div class="kicker">·  Part II  ·</div>
+        <h1>Research</h1>
+      </section>
+
+      <div class="group-heading">
+        <div class="roman">·  I  ·</div>
+        <h3>Publications</h3>
+        <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+      </div>
+      <section class="pub-list">
+        ${publications.map(pubRow).join('')}
+      </section>
+
+      <div class="group-heading" style="padding-top:56px">
+        <div class="roman">·  II  ·</div>
+        <h3>Working Papers</h3>
+        <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+      </div>
+      <section class="pub-list">
+        ${workingPapers.map(wpRow).join('')}
+      </section>
+
+      <div class="group-heading" style="padding-top:56px">
+        <div class="roman">·  III  ·</div>
+        <h3>Selected Work in Progress</h3>
+        <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+      </div>
+      <section class="pub-list" style="padding-bottom:96px">
+        ${inProgress.map(p => wpRow({ status: 'In Progress', ...p })).join('')}
+      </section>
+    </div>
+  `;
+}
+
+function renderTeaching() {
+  const ta = [
+    { term: 'Fall 2025', title: 'AI in Service Industries', role: 'Teaching Assistant · University of Zurich' },
+    { term: 'Spring 2025 – 2026', title: 'Industrial Perspectives on Operations Management', role: 'Teaching Assistant · University of Zurich' },
+    { term: 'Fall 2024', title: 'Services & Operations Management', role: 'Teaching Assistant · University of Zurich' },
+    { term: 'Fall 2024 – 2025', title: 'Quantitative Methods in Sports', role: 'Teaching Assistant · University of Zurich' },
+  ];
+  const lectures = [
+    { term: 'Spring & Fall 2025', title: 'Current Socio-Economic Issues and Challenges in Sports', role: 'Invited Lecture · University of Lausanne' },
+  ];
+  const theses = [
+    'Sebastian Lutz', 'Yihao Bian', 'Lin Qing', 'Zhaosong Li', 'Sarujan Beemsing',
+  ];
+
+  return `
+    <div class="wrap">
+      <section class="title-block">
+        <div class="kicker">·  Part III  ·</div>
+        <h1>Teaching</h1>
+        <div class="tagline">Courses, invited lectures, and supervised theses at the University of Zurich and beyond.</div>
+      </section>
+
+      <div class="group-heading" style="padding-top: 32px">
+        <div class="roman">·  I  ·</div>
+        <h3>Teaching Assistant</h3>
+        <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+      </div>
+      <section style="padding:48px 0">
+        <div class="teaching-grid">
+          ${ta.map(t => `
+            <div class="teach-card">
+              <div class="term">${t.term}</div>
+              <div class="ttitle">${t.title}</div>
+              <div class="role">${t.role}</div>
+            </div>
+          `).join('')}
+        </div>
+      </section>
+
+      <div class="group-heading">
+        <div class="roman">·  II  ·</div>
+        <h3>Invited Lecture</h3>
+        <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+      </div>
+      <section style="padding:48px 0">
+        <div class="teaching-grid" style="grid-template-columns: 1fr; max-width: 720px">
+          ${lectures.map(t => `
+            <div class="teach-card" style="text-align:center">
+              <div class="term">${t.term}</div>
+              <div class="ttitle">${t.title}</div>
+              <div class="role">${t.role}</div>
+            </div>
+          `).join('')}
+        </div>
+      </section>
+
+      <div class="group-heading">
+        <div class="roman">·  III  ·</div>
+        <h3>Master Theses Supervised</h3>
+        <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+      </div>
+      <section style="padding:48px 0 96px; text-align:center">
+        <div style="max-width:640px; margin:0 auto; font-size:19px; line-height:2; color:var(--ink)">
+          ${theses.map(n => `<span style="white-space:nowrap">${n}</span>`).join(' <span style="color:var(--muted); margin:0 10px">·</span> ')}
+        </div>
+      </section>
+    </div>
+  `;
+}
+
+// ----- Router -----
+function go(page) {
+  const app = document.getElementById('app');
+  const render = PAGES[page] || PAGES.home;
+  app.innerHTML = render();
+
+  // update nav active
+  document.querySelectorAll('header nav a').forEach(a => {
+    a.classList.toggle('active', a.dataset.nav === page);
+  });
+
+  // hash sync
+  history.replaceState(null, '', page === 'home' ? '#' : '#' + page);
+  window.scrollTo(0, 0);
+  wireNav();
+}
+
+function wireNav() {
+  document.querySelectorAll('a[data-nav]').forEach(a => {
+    a.onclick = (e) => {
+      e.preventDefault();
+      go(a.dataset.nav);
+    };
+  });
+}
+
+// boot
+const initial = (location.hash || '').replace('#','') || 'home';
+go(PAGES[initial] ? initial : 'home');
+</script>
+</body>
+</html>
