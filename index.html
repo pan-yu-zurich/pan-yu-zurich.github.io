@@ -437,9 +437,8 @@ function renderHome() {
             ETH Zurich.
           </p>
           <div class="links">
-            <a class="link" href="#" data-nav="research">Research →</a>
-            <a class="link" href="#" data-nav="teaching">Teaching →</a>
             <a class="link" href="https://scholar.google.com/citations?user=kzVe9IYAAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="link" href="https://www.linkedin.com/in/pan-sports-econ" target="_blank" rel="noopener">LinkedIn</a>
             <a class="link" href="mailto:yu.pan@business.uzh.ch">Email</a>
           </div>
         </div>
@@ -689,17 +688,31 @@ function renderTeaching() {
 function go(page) {
   const app = document.getElementById('app');
   const render = PAGES[page] || PAGES.home;
-  app.innerHTML = render();
 
-  // update nav active
-  document.querySelectorAll('header nav a').forEach(a => {
-    a.classList.toggle('active', a.dataset.nav === page);
-  });
+  // fade out
+  app.style.transition = 'opacity 180ms ease, transform 180ms ease';
+  app.style.opacity = '0';
+  app.style.transform = 'translateY(4px)';
 
-  // hash sync
-  history.replaceState(null, '', page === 'home' ? '#' : '#' + page);
-  window.scrollTo(0, 0);
-  wireNav();
+  setTimeout(() => {
+    app.innerHTML = render();
+
+    // update nav active
+    document.querySelectorAll('header nav a').forEach(a => {
+      a.classList.toggle('active', a.dataset.nav === page);
+    });
+
+    // hash sync
+    history.replaceState(null, '', page === 'home' ? '#' : '#' + page);
+    window.scrollTo(0, 0);
+    wireNav();
+
+    // fade in
+    requestAnimationFrame(() => {
+      app.style.opacity = '1';
+      app.style.transform = 'translateY(0)';
+    });
+  }, 180);
 }
 
 function wireNav() {
