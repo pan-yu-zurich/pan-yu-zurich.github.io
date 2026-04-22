@@ -18,7 +18,9 @@
     --serif: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
     --sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
-  @media (prefers-color-scheme: dark) {
+  /* Dark mode disabled — site always renders in cream.
+     Media query kept (with invalid value) so styles are easy to restore later. */
+  @media (prefers-color-scheme: dark-disabled) {
     :root {
       --paper: #14110D;
       --card:  #1E1A14;
