@@ -126,6 +126,13 @@
     margin-top:26px; font-family:var(--sans); font-size:12px;
     color:var(--accent); letter-spacing:0.1em; text-transform:uppercase;
   }
+  /* Smaller variant for upcoming announcements (talks, conferences) */
+  .news.upcoming { padding: 56px 0; }
+  .news.upcoming .lead { font-size: 24px; }
+  @media (max-width: 768px) {
+    .news.upcoming { padding: 36px 0; }
+    .news.upcoming .lead { font-size: 19px; }
+  }
 
   /* Shared section */
   .section-title {
@@ -442,6 +449,16 @@ function renderHome() {
             <a class="link" href="https://www.linkedin.com/in/pan-sports-econ" target="_blank" rel="noopener">LinkedIn</a>
             <a class="link" href="mailto:yu.pan@business.uzh.ch">Email</a>
           </div>
+        </div>
+      </section>
+
+      <section class="news upcoming">
+        <div class="kicker">Upcoming — 2026</div>
+        <div class="lead">"AI CEO and Worker Performance: A Field Experiment"</div>
+        <div class="meta">Ongoing field experiment</div>
+        <div class="venue">Presenting at ESEA 2026 · University of Zurich</div>
+        <div class="cta">
+          <a class="link" href="https://www.crsa.uzh.ch/en/research/conferences/ESEA2026.html" target="_blank" rel="noopener">[ Conference Page ]</a>
         </div>
       </section>
 
