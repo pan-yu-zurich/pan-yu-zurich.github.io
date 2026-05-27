@@ -2,377 +2,404 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Yu Pan - UZH</title>
+<title>Yu Pan — UZH</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+<!-- V16 Sky · Newsreader display serif + Inter UI/body sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
   :root {
-    --paper: #F7F3EC;
-    --card:  #EFE8D9;
-    --ink:   #1C1917;
-    --muted: #6B5E52;
-    --rule:  #D9D0C0;
-    --accent:#7A2E1F;
-    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
-    --sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* — Sky palette: icy paper, deep slate ink, single sky-blue accent — */
+    --paper:  #F7FAFC;
+    --card:   #EEF3F7;
+    --ink:    #0F1820;
+    --muted:  #6C7884;
+    --rule:   rgba(15,24,32,0.10);
+    --accent: #3D7EC9;
+    --accent-deep: #2A5F9E;
+    --uzh:    #0028A5;   /* Official Universität Zürich blue — used only on the UZH wordmark */
+
+    /* — Type — */
+    --serif:  "Newsreader", "Iowan Old Style", Georgia, serif;
+    --sans:   "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
-  /* Dark mode disabled — site always renders in cream.
-     Media query kept (with invalid value) so styles are easy to restore later. */
+
+  /* Reserve dark mode for later — switch the media value to "dark" to opt in */
   @media (prefers-color-scheme: dark-disabled) {
     :root {
-      --paper: #14110D;
-      --card:  #1E1A14;
-      --ink:   #EFE7D6;
-      --muted: #8E8270;
-      --rule:  #3A3226;
-      --accent:#D98E6A;
+      --paper:  #0E1620;
+      --card:   #14202E;
+      --ink:    #EAF2F8;
+      --muted:  #8B98A6;
+      --rule:   rgba(234,242,248,0.12);
+      --accent: #6CA8DE;
+      --accent-deep: #98C4EE;
     }
   }
+
   * { box-sizing: border-box; }
-  html, body { margin:0; padding:0; background:var(--paper); color:var(--ink); font-family:var(--serif); font-size:17px; line-height:1.7; overflow-x: hidden; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--paper); color: var(--ink);
+    font-family: var(--serif); font-size: 17px; line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern", "liga", "calt", "onum";
+  }
+  /* Tabular figures everywhere a number means "compare me to other numbers" */
+  .pub-left, .pub-status, .teach-card .term,
+  header.site .dept, footer.site,
+  .news .kicker, .title-block .est {
+    font-feature-settings: "kern", "liga", "tnum", "cv11";
+    font-variant-numeric: tabular-nums;
+  }
   img { max-width: 100%; height: auto; }
-  a { color:inherit; text-decoration:none; }
-  a.link { color:var(--accent); border-bottom:1px solid var(--accent); padding-bottom:1px; }
-  a.link:hover { opacity:0.75; }
-  .sans { font-family:var(--sans); }
+  a { color: inherit; text-decoration: none; }
+  a.link {
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 1px;
+    transition: color 160ms ease, border-color 160ms ease;
+  }
+  a.link:hover { color: var(--accent-deep); border-bottom-color: var(--accent-deep); }
+  ::selection { background: rgba(61,126,201,0.20); }
+  .sans { font-family: var(--sans); }
   .wrap { max-width: 1120px; margin: 0 auto; padding: 0 48px; }
 
-  /* Header */
+  /* — Header — */
   header.site {
-    padding: 28px 0;
-    border-bottom: 1px double var(--rule);
+    padding: 22px 0;
+    border-bottom: 1px solid var(--rule);
   }
   header.site .row {
-    display:flex; justify-content:space-between; align-items:baseline; gap:24px;
+    display: flex; justify-content: space-between; align-items: center; gap: 24px;
     flex-wrap: wrap;
   }
+  header.site .brand {
+    display: flex; align-items: center; gap: 16px;
+  }
+  .uzh-mark {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 52px; height: 52px; flex-shrink: 0;
+    transition: opacity 160ms ease;
+  }
+  .uzh-mark img { width: 100%; height: 100%; display: block; }
+  .uzh-mark:hover { opacity: 0.65; }
+  header.site .lockup {
+    font-family: var(--sans); font-size: 11px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--muted); font-weight: 500;
+    line-height: 1.5;
+  }
+  header.site .lockup .l1 { color: var(--ink); font-weight: 600; }
   header.site .dept {
-    font-family:var(--sans); font-size:11px; letter-spacing:0.2em;
-    text-transform:uppercase; color:var(--muted);
+    font-family: var(--sans); font-size: 11px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--muted); font-weight: 500;
   }
   header.site nav {
-    display:flex; gap:28px; font-family:var(--sans); font-size:13px;
+    display: flex; gap: 28px;
+    font-family: var(--sans); font-size: 13px; font-weight: 500;
   }
-  header.site nav a { color:var(--muted); }
-  header.site nav a.active { color:var(--ink); border-bottom:1px solid var(--ink); padding-bottom:2px; }
-  header.site nav a:hover { color:var(--ink); }
+  header.site nav a {
+    color: var(--muted);
+    transition: color 160ms ease;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+  }
+  header.site nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
+  header.site nav a:hover { color: var(--ink); }
 
-  /* Title block */
-  .title-block { text-align:center; padding: 112px 0 72px; }
+  /* — Title block — */
+  .title-block { text-align: center; padding: 128px 0 80px; }
   .title-block .kicker {
-    font-family:var(--sans); font-size:11px; letter-spacing:0.3em;
-    text-transform:uppercase; color:var(--accent); margin-bottom: 36px;
+    font-family: var(--sans); font-size: 11px; letter-spacing: 0.32em;
+    text-transform: uppercase; color: var(--accent); font-weight: 600;
+    margin-bottom: 40px;
   }
   .title-block h1 {
-    font-size: 104px; font-weight: 400; margin: 0;
-    letter-spacing: -0.02em; line-height: 1;
+    font-size: 112px; font-weight: 400; margin: 0;
+    letter-spacing: -0.025em; line-height: 0.96;
+    font-variation-settings: "opsz" 72;
+    text-wrap: balance;
   }
   .title-block .tagline {
-    font-size: 23px; font-style: italic; font-weight: 400;
-    color: var(--ink); max-width: 720px; margin: 28px auto 0;
-    line-height: 1.45;
+    font-size: 24px; font-style: italic; font-weight: 400;
+    color: var(--ink); max-width: 720px; margin: 32px auto 0;
+    line-height: 1.4;
+    font-variation-settings: "opsz" 24;
+    letter-spacing: 0.005em;
+    text-wrap: pretty;
+    font-feature-settings: "kern", "liga", "calt", "onum";
   }
   .title-block .est {
-    margin-top: 44px; display:inline-flex; align-items:center; gap:16px;
-    font-family:var(--sans); font-size:12px; color:var(--muted);
-    letter-spacing:0.1em; text-transform:uppercase;
+    margin-top: 48px; display: inline-flex; align-items: center; gap: 16px;
+    font-family: var(--sans); font-size: 11px; color: var(--muted);
+    letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500;
   }
-  .title-block .est .dash { width:40px; height:1px; background:var(--muted); }
+  .title-block .est .dash { width: 40px; height: 1px; background: var(--muted); opacity: 0.6; }
 
-  /* Intro + portrait */
+  /* — Intro + portrait — */
   .intro {
-    padding: 56px 0; display:grid; grid-template-columns: 240px 1fr; gap: 64px;
-    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+    padding: 72px 0; display: grid; grid-template-columns: 240px 1fr; gap: 64px;
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
   }
   .portrait {
-    width:240px; height:240px; border:1px solid var(--rule);
-    border-radius:50%; overflow:hidden;
+    width: 240px; height: 240px;
+    border-radius: 50%; overflow: hidden;
+    box-shadow: 0 1px 0 var(--rule);
   }
-  .portrait img { width:100%; height:100%; object-fit:cover; display:block; }
+  .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .intro .addr {
-    font-family:var(--sans); font-size:11px; color:var(--muted);
-    margin-top:14px; line-height:1.6; text-transform:uppercase; letter-spacing:0.08em;
+    font-family: var(--sans); font-size: 11px; color: var(--muted);
+    margin-top: 18px; line-height: 1.8; text-transform: uppercase; letter-spacing: 0.12em;
+    font-weight: 500;
   }
   .intro .body .section-label {
-    font-family:var(--sans); font-size:13px; color:var(--accent);
-    letter-spacing:0.18em; text-transform:uppercase; margin-bottom: 20px;
+    font-family: var(--sans); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.28em; text-transform: uppercase; font-weight: 600;
+    margin-bottom: 24px;
   }
-  .intro .body p { font-size:19px; line-height:1.65; margin:0 0 18px; }
-  .intro .body p:last-of-type { margin-bottom:0; color: var(--muted); }
+  .intro .body p {
+    font-size: 20px; line-height: 1.6; margin: 0 0 20px;
+    text-wrap: pretty;
+  }
+  .intro .body p:last-of-type { margin-bottom: 0; color: var(--muted); font-size: 17px; }
   .intro .links {
-    margin-top:28px; display:flex; gap:20px; flex-wrap:wrap;
-    font-family:var(--sans); font-size:13px;
+    margin-top: 32px; display: flex; gap: 24px; flex-wrap: wrap;
+    font-family: var(--sans); font-size: 13px; font-weight: 500;
   }
 
-  /* News */
+  /* — News / Upcoming — */
   .news {
-    padding: 72px 0; text-align:center;
-    border-bottom:1px solid var(--rule);
+    padding: 88px 0; text-align: center;
+    border-bottom: 1px solid var(--rule);
   }
   .news .kicker {
-    font-family:var(--sans); font-size:11px; letter-spacing:0.25em;
-    text-transform:uppercase; color:var(--muted); margin-bottom: 20px;
+    font-family: var(--sans); font-size: 11px; letter-spacing: 0.28em;
+    text-transform: uppercase; color: var(--accent); font-weight: 600;
+    margin-bottom: 24px;
   }
   .news .lead {
     font-size: 30px; font-style: italic; font-weight: 400;
-    line-height: 1.4; max-width: 820px; margin: 0 auto 18px;
-    letter-spacing: -0.01em;
+    line-height: 1.32; max-width: 820px; margin: 0 auto 18px;
+    letter-spacing: -0.005em;
+    font-variation-settings: "opsz" 28;
+    text-wrap: balance;
   }
-  .news .meta { font-size:15px; color:var(--muted); }
-  .news .venue { font-size:15px; font-style: italic; margin-top:4px; }
+  .news .meta { font-size: 15px; color: var(--muted); margin-top: 4px; }
+  .news .venue { font-size: 15px; font-style: italic; margin-top: 6px; }
   .news .cta {
-    margin-top:26px; font-family:var(--sans); font-size:12px;
-    color:var(--accent); letter-spacing:0.1em; text-transform:uppercase;
+    margin-top: 28px;
+    font-family: var(--sans); font-size: 11px;
+    color: var(--accent); letter-spacing: 0.18em; text-transform: uppercase;
+    font-weight: 600;
   }
-  /* Smaller variant for upcoming announcements (talks, conferences) */
-  .news.upcoming { padding: 56px 0; }
-  .news.upcoming .lead { font-size: 24px; }
-  @media (max-width: 768px) {
-    .news.upcoming { padding: 36px 0; }
-    .news.upcoming .lead { font-size: 19px; }
-  }
+  .news.upcoming { padding: 72px 0; }
+  .news.upcoming .lead { font-size: 26px; }
 
-  /* Shared section */
-  .section-title {
-    text-align:center; margin: 0 0 48px;
-  }
+  /* — Section title block (Research / Teaching headers) — */
+  .section-title { text-align: center; margin: 0 0 48px; }
   .section-title .tag {
-    font-family:var(--sans); font-size:11px; letter-spacing:0.25em;
-    text-transform:uppercase; color:var(--accent); margin-bottom:12px;
+    font-family: var(--sans); font-size: 11px; letter-spacing: 0.28em;
+    text-transform: uppercase; color: var(--accent); font-weight: 600;
+    margin-bottom: 12px;
   }
   .section-title h2 {
-    font-size: 44px; font-weight: 400; letter-spacing: -0.02em;
-    margin:0;
+    font-size: 44px; font-weight: 400; letter-spacing: -0.022em;
+    margin: 0;
+    font-variation-settings: "opsz" 44;
   }
   .section-title .sub {
     font-size: 15px; font-style: italic; color: var(--muted); margin-top: 8px;
   }
 
-  /* Footer */
+  /* — Footer — */
   footer.site {
-    padding: 36px 0; border-top: 1px double var(--rule);
-    font-family:var(--sans); font-size:11px; color:var(--muted);
-    letter-spacing:0.15em; text-transform:uppercase;
+    padding: 36px 0; border-top: 1px solid var(--rule);
+    font-family: var(--sans); font-size: 11px; color: var(--muted);
+    letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500;
   }
-  footer.site .row { display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; }
+  footer.site .row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
 
-  /* Research page — chapter style */
+  /* — Research chapter style (kept, sky-toned) — */
   .chapter {
     padding: 88px 0 72px;
     border-bottom: 1px solid var(--rule);
   }
   .chapter:last-of-type { border-bottom: none; }
   .chapter-head {
-    display:grid; grid-template-columns: 140px 1fr; gap: 40px;
-    align-items:flex-start; margin-bottom: 44px;
+    display: grid; grid-template-columns: 140px 1fr; gap: 40px;
+    align-items: flex-start; margin-bottom: 44px;
   }
   .chapter-num-label {
-    font-family:var(--sans); font-size:12px; color:var(--muted);
-    letter-spacing:0.25em; text-transform:uppercase; margin-bottom:10px;
-    font-style: italic;
+    font-family: var(--sans); font-size: 11px; color: var(--muted);
+    letter-spacing: 0.24em; text-transform: uppercase; margin-bottom: 10px;
+    font-weight: 500;
   }
   .chapter-num {
     font-size: 108px; font-weight: 400; letter-spacing: -0.03em;
     line-height: 0.9; color: var(--accent);
+    font-variation-settings: "opsz" 72;
   }
   .chapter-meta {
-    font-family:var(--sans); font-size:12px; color:var(--accent);
-    letter-spacing: 0.2em; text-transform:uppercase; margin-bottom: 14px;
+    font-family: var(--sans); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600;
+    margin-bottom: 14px;
   }
   .chapter-title {
-    font-size: 40px; font-weight: 400; letter-spacing: -0.02em;
-    line-height: 1.15; margin: 0 0 8px;
+    font-size: 40px; font-weight: 400; letter-spacing: -0.022em;
+    line-height: 1.14; margin: 0 0 8px;
+    text-wrap: balance;
   }
-  .chapter-sub {
-    font-size: 22px; font-style: italic; font-weight: 300;
-    color: var(--ink); letter-spacing: -0.01em; margin-bottom: 16px; opacity: 0.85;
-  }
-  .chapter-venue { font-size: 15px; font-style: italic; color: var(--muted); }
-  .chapter-body {
-    font-size: 17px; line-height: 1.75; max-width: 840px; margin: 0 auto;
-  }
-  .chapter-links {
-    margin-top: 32px; display:flex; justify-content:center; gap: 28px; flex-wrap:wrap;
-    font-family:var(--sans); font-size:12px; letter-spacing:0.15em;
-    text-transform:uppercase;
-  }
-  .chapter-links a { color: var(--accent); border-bottom:1px solid var(--accent); padding-bottom:2px; }
 
-  /* Group heading */
-  .group-heading {
-    text-align:center; padding: 64px 0 8px; position:relative;
-  }
+  /* — Group heading (used on Research / Teaching subsections) — */
+  .group-heading { text-align: center; padding: 72px 0 8px; position: relative; }
   .group-heading .roman {
-    font-family:var(--sans); font-size:11px; letter-spacing:0.35em;
-    text-transform:uppercase; color:var(--muted); margin-bottom:8px;
+    font-family: var(--sans); font-size: 11px; letter-spacing: 0.34em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
+    font-weight: 500;
   }
   .group-heading h3 {
-    font-size: 34px; font-weight: 400; letter-spacing: -0.015em;
+    font-size: 32px; font-weight: 400; letter-spacing: -0.018em;
     margin: 0 0 4px; font-style: italic;
+    font-variation-settings: "opsz" 28;
   }
   .group-heading .count { font-size: 13px; color: var(--muted); font-style: italic; }
   .ornament {
-    display:flex; align-items:center; justify-content:center;
-    gap:14px; margin: 24px 0 0;
+    display: flex; align-items: center; justify-content: center;
+    gap: 14px; margin: 24px 0 0;
   }
-  .ornament .line { width:120px; height:1px; background:var(--rule); }
-  .ornament .dot { width:6px; height:6px; background:var(--accent); transform:rotate(45deg); }
+  .ornament .line { width: 60px; height: 1px; background: var(--rule); }
+  .ornament .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--muted); }
 
-  /* Teaching */
+  /* — Teaching grid — */
   .teaching-grid {
     max-width: 900px; margin: 0 auto;
-    display:grid; grid-template-columns: 1fr 1fr; gap: 32px 48px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 36px 48px;
   }
   .teach-card .term {
-    font-family:var(--sans); font-size:11px; color:var(--accent);
-    letter-spacing:0.15em; text-transform:uppercase; margin-bottom:8px;
+    font-family: var(--sans); font-size: 11px; color: var(--muted);
+    letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500;
+    margin-bottom: 8px;
   }
   .teach-card .ttitle {
-    font-size: 24px; font-weight: 400; letter-spacing: -0.015em; margin-bottom: 4px;
+    font-size: 22px; font-weight: 400; letter-spacing: -0.015em;
+    margin-bottom: 4px; line-height: 1.3;
   }
-  .teach-card .role { font-size:15px; font-style: italic; color:var(--muted); }
+  .teach-card .role { font-size: 15px; font-style: italic; color: var(--muted); line-height: 1.5; }
 
-  .list-flat {
-    max-width: 900px; margin: 0 auto;
-  }
-  .list-flat .row {
-    padding: 22px 0; border-bottom: 1px solid var(--rule);
-    display:grid; grid-template-columns: 140px 1fr; gap: 32px; align-items: baseline;
-  }
-  .list-flat .row:last-child { border-bottom: none; }
-  .list-flat .left {
-    font-family:var(--sans); font-size:12px; color:var(--accent);
-    letter-spacing:0.15em; text-transform:uppercase;
-  }
-  .list-flat .t { font-size: 20px; font-weight: 400; letter-spacing:-0.01em; margin-bottom:4px; }
-  .list-flat .s { font-size:14px; font-style:italic; color:var(--muted); }
-
-  /* Publication list — compact, book-style */
-  .pub-list { max-width: 860px; margin: 0 auto; padding: 32px 0 0; }
+  /* — Publication list (book-style) — */
+  .pub-list { max-width: 880px; margin: 0 auto; padding: 32px 0 0; }
   .pub {
-    display:grid; grid-template-columns: 150px 1fr 70px; gap: 28px;
-    padding: 22px 0; border-bottom: 1px solid var(--rule);
+    display: grid; grid-template-columns: 140px 1fr 80px; gap: 32px;
+    padding: 26px 0; border-bottom: 1px solid var(--rule);
     align-items: baseline;
   }
   .pub:last-child { border-bottom: none; }
   .pub-left {
-    font-family: var(--sans); font-size: 12px; color: var(--accent);
-    letter-spacing: 0.15em; text-transform: uppercase; line-height: 1.7;
-    text-align: center;
-    align-self: center;
+    font-family: var(--sans); font-size: 11px; color: var(--muted);
+    letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500;
+    line-height: 1.7; text-align: center; align-self: center;
   }
   .pub-status {
     font-family: var(--sans); font-size: 10px; color: var(--muted);
-    letter-spacing: 0.12em; text-transform: uppercase;
+    letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;
     white-space: nowrap;
   }
   .pub-title {
-    font-size: 19px; font-weight: 400; letter-spacing: -0.01em;
-    line-height: 1.4; margin-bottom: 6px;
+    font-size: 20px; font-weight: 400; letter-spacing: -0.015em;
+    line-height: 1.36; margin-bottom: 8px;
+    text-wrap: pretty;
   }
-  .pub-authors { font-size: 14px; color: var(--ink); line-height: 1.6; margin-bottom: 4px; }
-  .pub-authors b { font-weight: 500; }
-  .pub-venue { font-size: 14px; color: var(--muted); line-height: 1.55; font-style: italic; }
-  .pub-venue i { font-style: italic; }
-  a.coauthor { color: var(--ink); border-bottom: 1px dotted var(--muted); padding-bottom: 1px; }
+  .pub-authors {
+    font-size: 14.5px; color: var(--ink); line-height: 1.6; margin-bottom: 4px;
+    font-family: var(--sans);
+  }
+  .pub-authors b { font-weight: 600; color: var(--ink); }
+  .pub-venue {
+    font-size: 14px; color: var(--muted); line-height: 1.55;
+    font-style: italic;
+    font-family: var(--serif);
+  }
+  a.coauthor {
+    color: var(--ink);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+    transition: color 160ms ease, border-color 160ms ease;
+  }
   a.coauthor:hover { color: var(--accent); border-bottom-color: var(--accent); }
-  .pub-right { text-align: center; align-self: center; font-family: var(--sans); font-size: 12px; }
+  .pub-right {
+    text-align: center; align-self: center;
+    font-family: var(--sans); font-size: 12px;
+  }
 
-  /* Back link */
+  /* — Backlink — */
   .backlink {
-    display:inline-flex; gap:8px; align-items:center;
-    font-family:var(--sans); font-size:12px; letter-spacing:0.15em;
-    text-transform:uppercase; color:var(--muted); margin-top: 12px;
+    display: inline-flex; gap: 8px; align-items: center;
+    font-family: var(--sans); font-size: 11px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--muted); margin-top: 12px;
+    font-weight: 500;
   }
   .backlink:hover { color: var(--accent); }
 
-  /* Responsive */
+  /* ─────────── Responsive ─────────── */
   @media (max-width: 820px) {
     html, body { font-size: 16px; }
     .wrap { padding: 0 20px; }
 
-    /* Header */
-    header.site { padding: 18px 0; }
+    header.site { padding: 14px 0; }
     header.site .row { gap: 12px; }
     header.site nav { gap: 18px; font-size: 12px; flex-wrap: wrap; }
-    header.site .dept { font-size: 10px; }
+    header.site .brand { gap: 14px; }
+    .uzh-mark { width: 40px; height: 40px; }
+    header.site .lockup { font-size: 10px; letter-spacing: 0.14em; line-height: 1.4; }
 
-    /* Title block */
-    .title-block { padding: 56px 0 40px; }
-    .title-block .kicker { font-size: 10px; margin-bottom: 20px; letter-spacing: 0.2em; }
-    .title-block h1 { font-size: 56px; letter-spacing: -0.01em; }
-    .title-block .tagline { font-size: 18px; margin-top: 20px; padding: 0 8px; }
-    .title-block .est { margin-top: 28px; font-size: 11px; gap: 10px; }
+    .title-block { padding: 64px 0 48px; }
+    .title-block .kicker { font-size: 10px; margin-bottom: 24px; letter-spacing: 0.24em; }
+    .title-block h1 { font-size: 60px; letter-spacing: -0.018em; }
+    .title-block .tagline { font-size: 19px; margin-top: 22px; padding: 0 8px; }
+    .title-block .est { margin-top: 32px; font-size: 11px; gap: 10px; }
     .title-block .est .dash { width: 24px; }
 
-    /* Intro + portrait → stack */
-    .intro {
-      grid-template-columns: 1fr; gap: 32px; padding: 40px 0;
-    }
-    .portrait {
-      width: 200px; height: 200px; margin: 0 auto;
-    }
+    .intro { grid-template-columns: 1fr; gap: 32px; padding: 44px 0; }
+    .portrait { width: 200px; height: 200px; margin: 0 auto; }
     .intro .addr { text-align: center; }
-    .intro .body .section-label { font-size: 12px; margin-bottom: 14px; }
-    .intro .body p { font-size: 17px; line-height: 1.6; }
-    .intro .links { gap: 14px; font-size: 12px; justify-content: center; }
+    .intro .body .section-label { font-size: 11px; margin-bottom: 16px; }
+    .intro .body p { font-size: 18px; line-height: 1.6; }
+    .intro .body p:last-of-type { font-size: 16px; }
+    .intro .links { gap: 16px; font-size: 13px; justify-content: center; }
 
-    /* News */
-    .news { padding: 48px 0; }
-    .news .lead { font-size: 22px; line-height: 1.35; padding: 0 4px; }
+    .news { padding: 52px 0; }
+    .news .lead { font-size: 22px; line-height: 1.36; padding: 0 4px; }
+    .news.upcoming { padding: 40px 0; }
+    .news.upcoming .lead { font-size: 19px; }
 
-    /* Chapter openers (Research) */
     .chapter-num { font-size: 64px !important; }
     .chapter-title { font-size: 26px !important; line-height: 1.25 !important; padding: 0 4px; }
-    .chapter-venue { font-size: 13px !important; }
     .chapter-body { font-size: 15px !important; line-height: 1.65 !important; padding: 0 4px; }
-    .chapter-links { flex-direction: column; gap: 10px !important; align-items: center; }
 
-    /* Teaching grid → single column */
     .teaching-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
-
-    /* Publications list (keep existing stack) */
-    .pub { grid-template-columns: 1fr; gap: 6px; }
-
-    /* Section headings */
+    .pub { grid-template-columns: 1fr; gap: 6px; padding: 22px 0; }
+    .pub-left { text-align: left; }
     h2 { font-size: 32px !important; }
     h3 { font-size: 22px !important; }
-
-    /* Generic section padding */
     section { padding: 48px 0 !important; }
+    .group-heading { padding: 48px 0 4px; }
   }
 
   @media (max-width: 480px) {
-    .title-block h1 { font-size: 44px; }
-    .title-block .tagline { font-size: 16px; }
+    .title-block h1 { font-size: 48px; }
+    .title-block .tagline { font-size: 17px; }
     .portrait { width: 160px; height: 160px; }
-    .news .lead { font-size: 19px; }
+    .news .lead { font-size: 20px; }
     .chapter-num { font-size: 48px !important; }
     .chapter-title { font-size: 22px !important; }
-  }
-
-  /* Old responsive block (kept for safety) */
-  @media (max-width: 820px) {
-    .pub { grid-template-columns: 1fr; gap: 6px; }
-    .wrap { padding: 0 28px; }
-    .title-block { padding: 72px 0 48px; }
-    .title-block h1 { font-size: 64px; }
-    .title-block .tagline { font-size: 18px; }
-    .intro { grid-template-columns: 1fr; gap:32px; padding: 40px 0; }
-    .portrait { width: 180px; height: 180px; margin: 0 auto; }
-    .intro .addr { text-align:center; }
-    .intro .links { justify-content:center; }
-    .news .lead { font-size: 22px; }
-    .section-title h2 { font-size: 32px; }
-    .chapter-head { grid-template-columns: 1fr; gap: 8px; }
-    .chapter-num { font-size: 72px; }
-    .chapter-title { font-size: 28px; }
-    .chapter-sub { font-size: 18px; }
-    .teaching-grid { grid-template-columns: 1fr; gap: 28px; }
-    .list-flat .row { grid-template-columns: 1fr; gap: 8px; }
-    header.site nav { gap: 18px; font-size: 12px; }
   }
 </style>
 </head>
@@ -380,7 +407,15 @@
 
 <header class="site">
   <div class="wrap row">
-    <div class="dept">Universität Zürich · Department of Business Administration</div>
+    <div class="brand">
+      <a class="uzh-mark" href="https://www.uzh.ch" target="_blank" rel="noopener" aria-label="Universität Zürich">
+        <img src="uzh-seal.png" alt="UZH" />
+      </a>
+      <div class="lockup">
+        <div class="l1">University of Zurich</div>
+        <div>Department of Business Administration</div>
+      </div>
+    </div>
     <nav>
       <a href="#" class="active" data-nav="home">About</a>
       <a href="#" data-nav="research">Research</a>
@@ -400,18 +435,12 @@
 </footer>
 
 <script>
-// ----- Data from CV -----
+// ─────────── Data (verbatim from CV, unchanged) ───────────
 const PAGES = {
   home: renderHome,
   research: renderResearch,
   teaching: renderTeaching,
 };
-
-function el(html) {
-  const t = document.createElement('template');
-  t.innerHTML = html.trim();
-  return t.content.firstElementChild;
-}
 
 function renderHome() {
   return `
@@ -454,14 +483,14 @@ function renderHome() {
 
       <section class="news upcoming">
         <div class="kicker">Upcoming Conferences — 2026</div>
-        <div class="lead">"AI Commentary: Bridging the Gender Gap in Football"</div>
+        <div class="lead">“AI Commentary: Bridging the Gender Gap in Football”</div>
         <div class="venue"><a class="link" href="https://www.crsa.uzh.ch/en/research/conferences/ESEA2026.html" target="_blank" rel="noopener">17th ESEA Conference on Sport Economics</a></div>
         <div class="venue"><a class="link" href="https://www.easm2026.com/" target="_blank" rel="noopener">34th European Association for Sport Management Conference</a></div>
       </section>
 
       <section class="news">
         <div class="kicker">Latest Publication — 2026</div>
-        <div class="lead">"When Robots Think and Feel, Will Trust Disappear? Evidence from an Online Experiment"</div>
+        <div class="lead">“When Robots Think and Feel, Will Trust Disappear? Evidence from an Online Experiment”</div>
         <div class="meta">Yu Pan, Carlos Gomez-Gonzalez, Gwen-Jirō Clochard, and Helmut M. Dietl</div>
         <div class="venue">Journal of Behavioral and Experimental Economics, Vol. 122, 102563</div>
         <div class="cta">
@@ -531,7 +560,6 @@ function renderResearch() {
     },
   ];
 
-  // Coauthor -> personal website map. Edit these URLs as needed.
   const COAUTHOR_URLS = {
     'Carlos Gomez-Gonzalez': 'https://www.carlosgomez-gonzalez.com/',
     'Gwen-Jirō Clochard': 'https://sites.google.com/view/gwen-jiro-clochard/home',
@@ -560,8 +588,8 @@ function renderResearch() {
       <div class="pub-body">
         <div class="pub-title">${p.title}</div>
         <div class="pub-authors">${linkAuthors(p.authors)}</div>
-        ${p.venue ? `<div class="pub-venue"><i>${p.venue}</i></div>` : ''}
-        ${p.note ? `<div class="pub-venue"><i>${p.note}</i></div>` : ''}
+        ${p.venue ? `<div class="pub-venue">${p.venue}</div>` : ''}
+        ${p.note ? `<div class="pub-venue">${p.note}</div>` : ''}
       </div>
       <div class="pub-right">${p.link ? `<a class="link" href="${p.link}" target="_blank" rel="noopener">Link</a>` : ''}</div>
     </div>
@@ -573,7 +601,7 @@ function renderResearch() {
       <div class="pub-body">
         <div class="pub-title">${p.title}</div>
         <div class="pub-authors">${linkAuthors(p.authors)}</div>
-        ${p.note ? `<div class="pub-venue"><i>${p.note}</i></div>` : ''}
+        ${p.note ? `<div class="pub-venue">${p.note}</div>` : ''}
       </div>
       <div class="pub-right"></div>
     </div>
@@ -586,7 +614,6 @@ function renderResearch() {
       </section>
 
       <div class="group-heading">
-        <div class="roman">·  I  ·</div>
         <h3>Publications</h3>
         <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
       </div>
@@ -594,8 +621,7 @@ function renderResearch() {
         ${publications.map(pubRow).join('')}
       </section>
 
-      <div class="group-heading" style="padding-top:56px">
-        <div class="roman">·  II  ·</div>
+      <div class="group-heading" style="padding-top:64px">
         <h3>Working Papers</h3>
         <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
       </div>
@@ -603,8 +629,7 @@ function renderResearch() {
         ${workingPapers.map(wpRow).join('')}
       </section>
 
-      <div class="group-heading" style="padding-top:56px">
-        <div class="roman">·  III  ·</div>
+      <div class="group-heading" style="padding-top:64px">
         <h3>Selected Work in Progress</h3>
         <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
       </div>
@@ -637,11 +662,10 @@ function renderTeaching() {
       </section>
 
       <div class="group-heading" style="padding-top: 32px">
-        <div class="roman">·  I  ·</div>
         <h3>Teaching Assistant</h3>
         <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
       </div>
-      <section style="padding:48px 0">
+      <section style="padding:56px 0">
         <div class="teaching-grid">
           ${ta.map(t => `
             <div class="teach-card">
@@ -654,11 +678,10 @@ function renderTeaching() {
       </section>
 
       <div class="group-heading">
-        <div class="roman">·  II  ·</div>
         <h3>Invited Lecture</h3>
         <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
       </div>
-      <section style="padding:48px 0">
+      <section style="padding:56px 0">
         <div class="teaching-grid" style="grid-template-columns: 1fr; max-width: 720px">
           ${lectures.map(t => `
             <div class="teach-card" style="text-align:center">
@@ -671,48 +694,43 @@ function renderTeaching() {
       </section>
 
       <div class="group-heading">
-        <div class="roman">·  III  ·</div>
         <h3>Master Theses Supervised</h3>
         <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
       </div>
-      <section style="padding:48px 0 96px; text-align:center">
-        <div style="max-width:640px; margin:0 auto; font-size:19px; line-height:2; color:var(--ink)">
-          ${theses.map(n => `<span style="white-space:nowrap">${n}</span>`).join(' <span style="color:var(--muted); margin:0 10px">·</span> ')}
+      <section style="padding:56px 0 96px; text-align:center">
+        <div style="max-width:680px; margin:0 auto; font-size:20px; line-height:2; color:var(--ink)">
+          ${theses.map(n => `<span style="white-space:nowrap">${n}</span>`).join(' <span style="color:var(--muted); margin:0 12px">·</span> ')}
         </div>
       </section>
     </div>
   `;
 }
 
-// ----- Router -----
+// ─────────── Router (unchanged from original) ───────────
 function go(page) {
   const app = document.getElementById('app');
   const render = PAGES[page] || PAGES.home;
 
-  // fade out
-  app.style.transition = 'opacity 180ms ease, transform 180ms ease';
+  app.style.transition = 'opacity 200ms ease, transform 200ms ease';
   app.style.opacity = '0';
   app.style.transform = 'translateY(4px)';
 
   setTimeout(() => {
     app.innerHTML = render();
 
-    // update nav active
     document.querySelectorAll('header nav a').forEach(a => {
       a.classList.toggle('active', a.dataset.nav === page);
     });
 
-    // hash sync
     history.replaceState(null, '', page === 'home' ? '#' : '#' + page);
     window.scrollTo(0, 0);
     wireNav();
 
-    // fade in
     requestAnimationFrame(() => {
       app.style.opacity = '1';
       app.style.transform = 'translateY(0)';
     });
-  }, 180);
+  }, 200);
 }
 
 function wireNav() {
@@ -724,8 +742,7 @@ function wireNav() {
   });
 }
 
-// boot
-const initial = (location.hash || '').replace('#','') || 'home';
+const initial = (location.hash || '').replace('#', '') || 'home';
 go(PAGES[initial] ? initial : 'home');
 </script>
 </body>
