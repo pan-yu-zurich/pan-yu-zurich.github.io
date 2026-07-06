@@ -47,7 +47,7 @@ jobs:
       - name: Final build
         run: |
           set -o pipefail
-          hugo --destination docs 2>&1 | tee build.log || { echo "::error::HUGO_FAILED $(tail -c 700 build.log | tr '\n' '|')"; exit 1; }
+          hugo --destination docs 2>&1 | tee build.log || { echo "::error::HUGO_FAILED $(grep -iE 'error|denied|failed' build.log | head -n 8 | tr '\n' '|' | head -c 900)"; exit 1; }
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
