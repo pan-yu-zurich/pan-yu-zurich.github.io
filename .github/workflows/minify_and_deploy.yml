@@ -23,7 +23,7 @@ jobs:
   build-and-minify:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: "latest"
+      HUGO_VERSION: "0.162.1"
       HUGO_ENVIRONMENT: "production"
     steps:
       - name: Checkout
@@ -41,7 +41,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "latest"
+          hugo-version: "0.162.1"
           extended: true
 
       - name: Final build
