@@ -45,7 +45,9 @@ jobs:
           extended: true
 
       - name: Final build
-        run: hugo --destination docs
+        run: |
+          set -o pipefail
+          hugo --destination docs 2>&1 | tee build.log || { echo "::error::HUGO_FAILED $(tail -c 700 build.log | tr '\n' '|')"; exit 1; }
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
