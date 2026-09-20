@@ -13,7 +13,7 @@ Personal academic website of Yu Pan.
 Everything lives in `index.html`:
 
 - **About / bio**: search for `renderHome`
-- **News banner / upcoming talks**: search for `Latest Publication` or `Upcoming Conferences`
+- **News banner / conference talks**: search for `Latest Publication` or `Recent Conferences`
 - **Publications**: search for `const publications`
 - **Working papers**: search for `const workingPapers`
 - **Work in progress**: search for `const inProgress`
@@ -23,6 +23,6 @@ Everything lives in `index.html`:
 ## Papers policy (do not "fix" these)
 
 - Working-paper PDFs live under `/papers/` and are linked **from the CV only**. The site deliberately does not link them, and `robots.txt` blocks search engines from that folder (one submission is under double-blind review).
-- The paper under review at AMD is listed under a deliberately vague placeholder title ("Chinese Football"). Keep it that way until the review concludes.
+- The football paper with Marco Henriques Pereira (formerly listed under the placeholder title "Chinese Football" while under review at AMD) was removed from the site in September 2026 after AMD rejected it. Re-add it under its real title once it reaches Revise & Resubmit elsewhere.
 - Solo-authored working papers (including the Job Market Paper) stay off the site until they reach Revise & Resubmit.
 - The CV PDF is intentionally not hosted on the site.
