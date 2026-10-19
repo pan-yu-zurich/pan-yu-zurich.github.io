@@ -411,6 +411,7 @@
     .teaching-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
     .pub { grid-template-columns: 1fr; gap: 6px; padding: 22px 0; }
     .pub-left { text-align: left; }
+    .pub-left:empty, .pub-right:empty { display: none; }
     h2 { font-size: 32px !important; }
     h3 { font-size: 22px !important; }
     section { padding: 48px 0 !important; }
@@ -556,22 +557,18 @@ function renderResearch() {
       note: 'China Economic Review',
     },
     {
-      status: 'Submitted',
       title: 'Can AI Bridge the Gender Gap in Sports? Evidence from YouTube and Online Experiments',
       authors: 'Yu Pan, Laurel Walzak, Carlos Gomez-Gonzalez, Helmut M. Dietl',
     },
     {
-      status: 'In Progress',
       title: 'Why Does Imported Talent Hold the Central Roles in China, but Not in Japan or Korea?',
       authors: 'Yu Pan, Marco Henriques Pereira',
     },
     {
-      status: 'Submitted',
       title: 'Same Performance, Different Judgments: Gendered Evaluation Across Success and Failure',
       authors: 'Yu Pan, Carlos Gomez-Gonzalez, Helmut M. Dietl',
     },
     {
-      status: 'In Progress',
       title: 'Agricultural Practices, Organized Workers, and Female Political Empowerment: Evidence from Italian Mondine',
       authors: 'Luca Bagnato, Yu Pan, Miriam Venturini',
     },
@@ -625,7 +622,7 @@ function renderResearch() {
 
   const wpRow = (p) => `
     <div class="pub">
-      <div class="pub-left"><span class="pub-status">${p.status}</span></div>
+      <div class="pub-left">${p.status ? `<span class="pub-status">${p.status}</span>` : ''}</div>
       <div class="pub-body">
         <div class="pub-title">${p.title}</div>
         <div class="pub-authors">${linkAuthors(p.authors)}</div>
@@ -662,7 +659,7 @@ function renderResearch() {
         <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
       </div>
       <section class="pub-list" style="padding-bottom:96px">
-        ${inProgress.map(p => wpRow({ status: 'In Progress', ...p })).join('')}
+        ${inProgress.map(wpRow).join('')}
       </section>
     </div>
   `;
