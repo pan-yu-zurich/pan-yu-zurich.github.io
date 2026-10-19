@@ -141,6 +141,7 @@
 
   /* — Title block — */
   .title-block { text-align: center; padding: 128px 0 80px; }
+  .title-block.page { padding: 96px 0 40px; } /* Research and Teaching: first section closer to the title */
   .title-block .kicker {
     font-family: var(--sans); font-size: 11px; letter-spacing: 0.32em;
     text-transform: uppercase; color: var(--accent); font-weight: 600;
@@ -412,6 +413,7 @@
     .pub { grid-template-columns: 1fr; gap: 6px; padding: 22px 0; }
     .pub-left { text-align: left; }
     .pub-left:empty, .pub-right:empty { display: none; }
+    .pub-right { text-align: left; }
     h2 { font-size: 32px !important; }
     h3 { font-size: 22px !important; }
     section { padding: 48px 0 !important; }
@@ -509,13 +511,6 @@ function renderHome() {
         </div>
       </section>
 
-      <section class="news upcoming">
-        <div class="kicker">Recent Conferences — 2026</div>
-        <div class="lead">“Can AI Bridge the Gender Gap in Sports? Evidence from YouTube and Online Experiments”</div>
-        <div class="venue"><a class="link" href="https://www.crsa.uzh.ch/en/research/conferences/ESEA2026.html" target="_blank" rel="noopener">17th ESEA Conference on Sport Economics</a></div>
-        <div class="venue"><a class="link" href="https://www.easm2026.com/" target="_blank" rel="noopener">34th European Association for Sport Management Conference</a></div>
-      </section>
-
       <section class="news">
         <div class="kicker">Latest Publication — 2026</div>
         <div class="lead">“When Robots Think and Feel, Will Trust Disappear? Evidence from an Online Experiment”</div>
@@ -524,6 +519,13 @@ function renderHome() {
         <div class="cta">
           <a class="link" href="https://doi.org/10.1016/j.socec.2026.102563" target="_blank" rel="noopener">[ Read the Paper ]</a>
         </div>
+      </section>
+
+      <section class="news upcoming">
+        <div class="kicker">Recent Conferences — 2026</div>
+        <div class="lead">“Can AI Bridge the Gender Gap in Sports? Evidence from YouTube and Online Experiments”</div>
+        <div class="venue"><a class="link" href="https://www.crsa.uzh.ch/en/research/conferences/ESEA2026.html" target="_blank" rel="noopener">17th ESEA Conference on Sport Economics</a></div>
+        <div class="venue"><a class="link" href="https://www.easm2026.com/" target="_blank" rel="noopener">34th European Association for Sport Management Conference</a></div>
       </section>
     </div>
   `;
@@ -616,7 +618,7 @@ function renderResearch() {
         ${p.venue ? `<div class="pub-venue">${p.venue}</div>` : ''}
         ${p.note ? `<div class="pub-venue">${p.note}</div>` : ''}
       </div>
-      <div class="pub-right">${p.link ? `<a class="link" href="${p.link}" target="_blank" rel="noopener">Link</a>` : ''}</div>
+      <div class="pub-right">${p.link ? `<a class="link" href="${p.link}" target="_blank" rel="noopener">DOI</a>` : ''}</div>
     </div>
   `;
 
@@ -634,11 +636,11 @@ function renderResearch() {
 
   return `
     <div class="wrap">
-      <section class="title-block">
+      <section class="title-block page">
         <h1>Research</h1>
       </section>
 
-      <div class="group-heading">
+      <div class="group-heading" style="padding-top:32px">
         <h3>Publications</h3>
         <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
       </div>
@@ -681,7 +683,7 @@ function renderTeaching() {
 
   return `
     <div class="wrap">
-      <section class="title-block">
+      <section class="title-block page">
         <h1>Teaching</h1>
         <div class="tagline">Courses, invited lectures, and supervised theses at the University of Zurich and beyond.</div>
       </section>
