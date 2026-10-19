@@ -23,6 +23,6 @@ Everything lives in `index.html`:
 ## Papers policy (do not "fix" these)
 
 - Working-paper PDFs live under `/papers/` and are linked **from the CV only**. The site deliberately does not link them, and `robots.txt` blocks search engines from that folder (one submission is under double-blind review).
-- The football paper with Marco Henriques Pereira (formerly listed under the placeholder title "Chinese Football" while under review at AMD) was removed from the site in September 2026 after AMD rejected it. Re-add it under its real title once it reaches Revise & Resubmit elsewhere.
+- The football paper with Marco Henriques Pereira was re-added in October 2026 at the author's request, under its full title. As with every working paper, the site does not link its PDF.
 - Solo-authored working papers (including the Job Market Paper) stay off the site until they reach Revise & Resubmit.
 - The CV PDF is intentionally not hosted on the site.
