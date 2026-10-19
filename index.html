@@ -322,7 +322,7 @@
   /* — Publication list (book-style) — */
   .pub-list { max-width: 880px; margin: 0 auto; padding: 32px 0 0; }
   .pub {
-    display: grid; grid-template-columns: 140px 1fr 80px; gap: 32px;
+    display: grid; grid-template-columns: 140px 1fr 80px; gap: 0 32px;
     padding: 26px 0; border-bottom: 1px solid var(--rule);
     align-items: baseline;
   }
@@ -352,6 +352,22 @@
     font-style: italic;
     font-family: var(--serif);
   }
+  .talks-toggle {
+    font-family: var(--sans); font-size: 12px; color: var(--accent);
+    background: none; border: 0; border-bottom: 1px solid var(--accent);
+    padding: 0 0 1px; cursor: pointer; white-space: nowrap;
+    transition: color 160ms ease, border-color 160ms ease;
+  }
+  .talks-toggle:hover { color: var(--accent-deep); border-bottom-color: var(--accent-deep); }
+  .talks-toggle .caret { display: inline-block; margin-left: 4px; font-size: 9px; transition: transform 160ms ease; }
+  .talks-toggle[aria-expanded="true"] .caret { transform: rotate(180deg); }
+  .pub-talks {
+    grid-column: 2 / 4; margin-top: 12px; padding-left: 14px; border-left: 1px solid var(--rule);
+    font-family: var(--sans); font-size: 13px; line-height: 1.7; color: var(--muted);
+  }
+  .pub-talks a { color: inherit; border-bottom: 1px solid var(--rule); transition: color 160ms ease, border-color 160ms ease; }
+  .pub-talks a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .pub-talks > div { padding-left: 1em; text-indent: -1em; } /* a wrapped line (phones) hangs under the first */
   a.coauthor {
     color: var(--ink);
     border-bottom: 1px solid transparent;
@@ -414,6 +430,7 @@
     .pub-left { text-align: left; }
     .pub-left:empty, .pub-right:empty { display: none; }
     .pub-right { text-align: left; }
+    .pub-talks { grid-column: 1; margin-top: 6px; }
     h2 { font-size: 32px !important; }
     h3 { font-size: 22px !important; }
     section { padding: 48px 0 !important; }
@@ -557,22 +574,54 @@ function renderResearch() {
       title: 'Upset Losses and Political Attitudes: Evidence from Chinese Football',
       authors: 'Yu Pan, Jingwen Yu',
       note: 'China Economic Review',
+      talks: [
+        { name: '17th ESEA Conference on Sport Economics', year: '2026', url: 'https://www.crsa.uzh.ch/dam/jcr:d92c31af-526a-4601-912c-e95b070bde12/ESEA_Conference_2026_Zurich_Program.pdf' },
+      ],
     },
     {
       title: 'Can AI Bridge the Gender Gap in Sports? Evidence from YouTube and Online Experiments',
       authors: 'Yu Pan, Laurel Walzak, Carlos Gomez-Gonzalez, Helmut M. Dietl',
+      talks: [
+        { name: '34th European Association for Sport Management Conference', year: '2026', url: 'https://www.easm2026.com/sites/default/files/2026-09/program-16.9-3.pdf' },
+        { name: '17th ESEA Conference on Sport Economics', year: '2026', url: 'https://www.crsa.uzh.ch/dam/jcr:d92c31af-526a-4601-912c-e95b070bde12/ESEA_Conference_2026_Zurich_Program.pdf' },
+      ],
     },
     {
       title: 'Why Does Imported Talent Hold the Central Roles in China, but Not in Japan or Korea?',
       authors: 'Yu Pan, Marco Henriques Pereira',
+      talks: [
+        { name: 'AMD Publishing and Paper Development Workshop', year: '2025', url: 'https://www.aom.org/event/amd-publishing-and-paper-development-workshop-zurich-switzerland/' },
+        { name: '16th ESEA Conference on Sport Economics', year: '2025', url: 'https://www.uibk.ac.at/media/filer_public/c2/29/c229fe28-dbdb-4b6b-8696-0441d0f83bf5/esea_innsbruck_2025_book_of_abstract.pdf' },
+        { name: '2nd Workshop on Sports, Economics, and Natural Experiments', year: '2025', url: 'https://www.crsa.uzh.ch/dam/jcr:37dffd84-ea9e-488c-b092-80f369073b63/SENE_Workshop_2025_Program_Zurich.pdf' },
+      ],
     },
     {
       title: 'Same Performance, Different Judgments: Gendered Evaluation Across Success and Failure',
       authors: 'Yu Pan, Carlos Gomez-Gonzalez, Helmut M. Dietl',
+      talks: [
+        { name: '9th International Meeting on Experimental and Behavioral Social Sciences', year: '2025', url: 'https://imebess.org/2025/files/IMEBESS-2025_Academic-Program.pdf' },
+        { name: 'UZH Business Research Seminar', year: '2024', url: 'https://www.business.uzh.ch/dam/jcr:d30d1b57-3c91-4f09-ba0e-0b684b0e5001/Liste%20Vortr%C3%A4geHS24.pdf' },
+        { name: '1st Workshop on Sports, Economics, and Natural Experiments', year: '2024', url: 'https://www.crsa.uzh.ch/en/conferences/SENE-Workshop.html' },
+      ],
     },
     {
       title: 'Agricultural Practices, Organized Workers, and Female Political Empowerment: Evidence from Italian Mondine',
       authors: 'Luca Bagnato, Yu Pan, Miriam Venturini',
+      talks: [
+        { name: '17th Petralia Workshop', year: '2026', by: 'Miriam', url: 'https://wp.nyu.edu/petralia2026/program/' },
+        { name: '4th Yale–UB Historical Political Economy Workshop', year: '2026', by: 'Miriam', url: 'https://web.ub.edu/en/web/departament-historia-economica/w/iv-yale-ub-historical-political-economy-workshop' },
+        { name: 'IEB IV Workshop on Public Policies', year: '2026', by: 'Miriam', url: 'https://ieb.ub.edu/en/event/iv-workshop-on-public-policies/' },
+        { name: 'Unibo Political Economy Workshop', year: '2026', by: 'Luca', url: 'https://dse.unibo.it/en/agenda-events/event/@@allegato_evento/196f4889-f8a3-4769-9ab3-ed3a989984a9/Political%20Economy%20Workshop%20Jan%2016%20FINAL.pdf' },
+        { name: 'KIZ Political Economy Workshop', year: '2025', by: 'Luca, poster', url: 'https://www.ifo.de/sites/default/files/2026-06/JB_2025_b.pdf' },
+        { name: 'WIP Seminar, Università Cattolica del Sacro Cuore', year: '2025', by: 'Luca', url: 'https://dipartimenti.unicatt.it/economia-finanza-notizie-wip-seminar-luca-bagnato-universita-di-milano' },
+        { name: 'Economics Workshop, University of Modena and Reggio Emilia', year: '2025', by: 'Luca', url: 'https://www.economia.unimore.it/en/research/workshops' },
+        { name: 'IdEP Junior Seminar, Università della Svizzera italiana', year: '2025', by: 'Luca', url: 'https://www.eco.usi.ch/en/node/9903' },
+        { name: 'Brown Bag Seminar, University of Milan', year: '2024', by: 'Luca', url: 'https://demm.unimi.it/en/events/brown-bag-seminar-luca-bagnato-universita-di-milano' },
+        { name: 'Economic History Society Annual Conference', year: '2024', by: 'Luca', url: 'https://ehs.org.uk/conference/ehs-annual-conference-2024-provisional-programme/' },
+        { name: '15th European Historical Economics Society Conference', year: '2023', by: 'Luca', url: 'https://ehes.org/conferences/ehes2023/EHES_2023_program.pdf' },
+        { name: 'EEA-ESEM Congress', year: '2023', by: 'Luca', url: 'https://eea-esem-congresses.org/node/85503' },
+        { name: '2nd SASCA PhD Conference', year: '2022', by: 'Miriam', url: 'https://www.unive.it/web/fileadmin/user_upload/eventi/SasCa/doc/Programma_SASCA_2022.pdf' },
+      ],
     },
   ];
 
@@ -622,7 +671,7 @@ function renderResearch() {
     </div>
   `;
 
-  const wpRow = (p) => `
+  const wpRow = (p, i) => `
     <div class="pub">
       <div class="pub-left">${p.status ? `<span class="pub-status">${p.status}</span>` : ''}</div>
       <div class="pub-body">
@@ -630,7 +679,8 @@ function renderResearch() {
         <div class="pub-authors">${linkAuthors(p.authors)}</div>
         ${p.note ? `<div class="pub-venue">${p.note}</div>` : ''}
       </div>
-      <div class="pub-right"></div>
+      <div class="pub-right">${p.talks ? `<button type="button" class="talks-toggle" aria-expanded="false" aria-controls="talks-${i}" onclick="toggleTalks(this)">Presented<span class="caret" aria-hidden="true">▾</span></button>` : ''}</div>
+      ${p.talks ? `<div class="pub-talks" id="talks-${i}" hidden>${p.talks.map(t => `<div>${t.url ? `<a href="${t.url}" target="_blank" rel="noopener">${t.name}</a>` : t.name}, ${t.year}${t.by ? ` (${t.by})` : ''}</div>`).join('')}</div>` : ''}
     </div>
   `;
 
@@ -734,6 +784,13 @@ function renderTeaching() {
 }
 
 // ─────────── Router (unchanged from original) ───────────
+// Working papers: show or hide the conferences a paper was presented at.
+function toggleTalks(btn) {
+  const open = btn.getAttribute('aria-expanded') !== 'true';
+  btn.setAttribute('aria-expanded', String(open));
+  document.getElementById(btn.getAttribute('aria-controls')).hidden = !open;
+}
+
 function go(page) {
   const app = document.getElementById('app');
   const render = PAGES[page] || PAGES.home;
