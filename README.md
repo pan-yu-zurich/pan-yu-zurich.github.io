@@ -13,7 +13,7 @@ Personal academic website of Yu Pan.
 Everything lives in `index.html`:
 
 - **About / bio**: search for `renderHome`
-- **News banner / conference talks**: search for `Latest Publication` or `Recent Conferences`
+- **News banner / conference talks**: search for `Talks —`, `Latest Publication` or `Recent Conferences`
 - **Publications**: search for `const publications`
 - **Working papers**: search for `const workingPapers`
 - **Work in progress**: search for `const inProgress`

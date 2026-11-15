@@ -227,6 +227,16 @@
   }
   .news.upcoming { padding: 72px 0; }
   .news.upcoming .lead { font-size: 26px; }
+  .news .talk-list {
+    display: inline-grid; grid-template-columns: auto auto;
+    gap: 10px 20px; align-items: baseline; text-align: left;
+  }
+  .news .talk-list .venue { margin-top: 0; }
+  .news .talk-list .date {
+    font-family: var(--sans); font-size: 11px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+    white-space: nowrap;
+  }
 
   /* — Section title block (Research / Teaching headers) — */
   .section-title { text-align: center; margin: 0 0 48px; }
@@ -420,6 +430,7 @@
     .news .lead { font-size: 22px; line-height: 1.36; padding: 0 4px; }
     .news.upcoming { padding: 40px 0; }
     .news.upcoming .lead { font-size: 19px; }
+    .news .talk-list { gap: 10px 14px; padding: 0 4px; }
 
     .chapter-num { font-size: 64px !important; }
     .chapter-title { font-size: 26px !important; line-height: 1.25 !important; padding: 0 4px; }
@@ -528,6 +539,17 @@ function renderHome() {
         </div>
       </section>
 
+      <section class="news upcoming">
+        <div class="kicker">Talks — November 2026</div>
+        <div class="talk-list">
+          <span class="date">10 Nov</span><span class="venue">University of Lausanne, Institute of Sports Sciences Seminar</span>
+          <span class="date">20 Nov</span><span class="venue">Beijing Foreign Studies University, International Business School Seminar</span>
+          <span class="date">21 Nov</span><span class="venue">6th Camphor Sports Economics Forum, Beijing Sport University</span>
+          <span class="date">22 Nov</span><span class="venue">China Young Economists Forum, Central University of Finance and Economics</span>
+          <span class="date">25 Nov</span><span class="venue">Peking University, School of Economics, Digital Economy Workshop</span>
+        </div>
+      </section>
+
       <section class="news">
         <div class="kicker">Latest Publication — 2026</div>
         <div class="lead">“When Robots Think and Feel, Will Trust Disappear? Evidence from an Online Experiment”</div>
@@ -566,22 +588,40 @@ function renderResearch() {
       authors: 'Yu Pan, Carlos Gomez-Gonzalez, Gwen-Jirō Clochard, Helmut M. Dietl',
       link: 'https://doi.org/10.1016/j.socec.2026.102563',
     },
+    {
+      year: 'Accepted',
+      status: 'Accepted',
+      title: 'Upset Losses and Political Attitudes: Evidence from Chinese Football',
+      venue: 'China Economic Review',
+      authors: 'Yu Pan, Jingwen Yu',
+    },
   ];
 
   const workingPapers = [
     {
-      status: 'Revise & Resubmit',
-      title: 'Upset Losses and Political Attitudes: Evidence from Chinese Football',
-      authors: 'Yu Pan, Jingwen Yu',
-      note: 'China Economic Review',
+      title: 'Agricultural Practices, Organized Workers and Female Empowerment: Evidence from Italian Mondine',
+      authors: 'Luca Bagnato, Yu Pan, Miriam Venturini',
       talks: [
-        { name: '17th ESEA Conference on Sport Economics', year: '2026', url: 'https://www.crsa.uzh.ch/dam/jcr:d92c31af-526a-4601-912c-e95b070bde12/ESEA_Conference_2026_Zurich_Program.pdf' },
+        { name: '17th Petralia Workshop', year: '2026', by: 'Miriam', url: 'https://wp.nyu.edu/petralia2026/program/' },
+        { name: '4th Yale–UB Historical Political Economy Workshop', year: '2026', by: 'Miriam', url: 'https://web.ub.edu/en/web/departament-historia-economica/w/iv-yale-ub-historical-political-economy-workshop' },
+        { name: 'IEB IV Workshop on Public Policies', year: '2026', by: 'Miriam', url: 'https://ieb.ub.edu/en/event/iv-workshop-on-public-policies/' },
+        { name: 'Unibo Political Economy Workshop', year: '2026', by: 'Luca', url: 'https://dse.unibo.it/en/agenda-events/event/@@allegato_evento/196f4889-f8a3-4769-9ab3-ed3a989984a9/Political%20Economy%20Workshop%20Jan%2016%20FINAL.pdf' },
+        { name: 'KIZ Political Economy Workshop', year: '2025', by: 'Luca, poster', url: 'https://www.ifo.de/sites/default/files/2026-06/JB_2025_b.pdf' },
+        { name: 'WIP Seminar, Università Cattolica del Sacro Cuore', year: '2025', by: 'Luca', url: 'https://dipartimenti.unicatt.it/economia-finanza-notizie-wip-seminar-luca-bagnato-universita-di-milano' },
+        { name: 'Economics Workshop, University of Modena and Reggio Emilia', year: '2025', by: 'Luca', url: 'https://www.economia.unimore.it/en/research/workshops' },
+        { name: 'IdEP Junior Seminar, Università della Svizzera italiana', year: '2025', by: 'Luca', url: 'https://www.eco.usi.ch/en/node/9903' },
+        { name: 'Brown Bag Seminar, University of Milan', year: '2024', by: 'Luca', url: 'https://demm.unimi.it/en/events/brown-bag-seminar-luca-bagnato-universita-di-milano' },
+        { name: 'Economic History Society Annual Conference', year: '2024', by: 'Luca', url: 'https://ehs.org.uk/conference/ehs-annual-conference-2024-provisional-programme/' },
+        { name: '15th European Historical Economics Society Conference', year: '2023', by: 'Luca', url: 'https://ehes.org/conferences/ehes2023/EHES_2023_program.pdf' },
+        { name: 'EEA-ESEM Congress', year: '2023', by: 'Luca', url: 'https://eea-esem-congresses.org/node/85503' },
+        { name: '2nd SASCA PhD Conference', year: '2022', by: 'Miriam', url: 'https://www.unive.it/web/fileadmin/user_upload/eventi/SasCa/doc/Programma_SASCA_2022.pdf' },
       ],
     },
     {
       title: 'Can AI Bridge the Gender Gap in Sports? Evidence from YouTube and Online Experiments',
       authors: 'Yu Pan, Laurel Walzak, Carlos Gomez-Gonzalez, Helmut M. Dietl',
       talks: [
+        { name: 'University of Lausanne, Institute of Sports Sciences Seminar', year: '2026', url: 'https://www.unil.ch/events/en/1793111055263' },
         { name: '34th European Association for Sport Management Conference', year: '2026', url: 'https://www.easm2026.com/sites/default/files/2026-09/program-16.9-3.pdf' },
         { name: '17th ESEA Conference on Sport Economics', year: '2026', url: 'https://www.crsa.uzh.ch/dam/jcr:d92c31af-526a-4601-912c-e95b070bde12/ESEA_Conference_2026_Zurich_Program.pdf' },
       ],
@@ -602,25 +642,6 @@ function renderResearch() {
         { name: '9th International Meeting on Experimental and Behavioral Social Sciences', year: '2025', url: 'https://imebess.org/2025/files/IMEBESS-2025_Academic-Program.pdf' },
         { name: 'UZH Business Research Seminar', year: '2024', url: 'https://www.business.uzh.ch/dam/jcr:d30d1b57-3c91-4f09-ba0e-0b684b0e5001/Liste%20Vortr%C3%A4geHS24.pdf' },
         { name: '1st Workshop on Sports, Economics, and Natural Experiments', year: '2024', url: 'https://www.crsa.uzh.ch/en/conferences/SENE-Workshop.html' },
-      ],
-    },
-    {
-      title: 'Agricultural Practices, Organized Workers and Female Empowerment: Evidence from Italian Mondine',
-      authors: 'Luca Bagnato, Yu Pan, Miriam Venturini',
-      talks: [
-        { name: '17th Petralia Workshop', year: '2026', by: 'Miriam', url: 'https://wp.nyu.edu/petralia2026/program/' },
-        { name: '4th Yale–UB Historical Political Economy Workshop', year: '2026', by: 'Miriam', url: 'https://web.ub.edu/en/web/departament-historia-economica/w/iv-yale-ub-historical-political-economy-workshop' },
-        { name: 'IEB IV Workshop on Public Policies', year: '2026', by: 'Miriam', url: 'https://ieb.ub.edu/en/event/iv-workshop-on-public-policies/' },
-        { name: 'Unibo Political Economy Workshop', year: '2026', by: 'Luca', url: 'https://dse.unibo.it/en/agenda-events/event/@@allegato_evento/196f4889-f8a3-4769-9ab3-ed3a989984a9/Political%20Economy%20Workshop%20Jan%2016%20FINAL.pdf' },
-        { name: 'KIZ Political Economy Workshop', year: '2025', by: 'Luca, poster', url: 'https://www.ifo.de/sites/default/files/2026-06/JB_2025_b.pdf' },
-        { name: 'WIP Seminar, Università Cattolica del Sacro Cuore', year: '2025', by: 'Luca', url: 'https://dipartimenti.unicatt.it/economia-finanza-notizie-wip-seminar-luca-bagnato-universita-di-milano' },
-        { name: 'Economics Workshop, University of Modena and Reggio Emilia', year: '2025', by: 'Luca', url: 'https://www.economia.unimore.it/en/research/workshops' },
-        { name: 'IdEP Junior Seminar, Università della Svizzera italiana', year: '2025', by: 'Luca', url: 'https://www.eco.usi.ch/en/node/9903' },
-        { name: 'Brown Bag Seminar, University of Milan', year: '2024', by: 'Luca', url: 'https://demm.unimi.it/en/events/brown-bag-seminar-luca-bagnato-universita-di-milano' },
-        { name: 'Economic History Society Annual Conference', year: '2024', by: 'Luca', url: 'https://ehs.org.uk/conference/ehs-annual-conference-2024-provisional-programme/' },
-        { name: '15th European Historical Economics Society Conference', year: '2023', by: 'Luca', url: 'https://ehes.org/conferences/ehes2023/EHES_2023_program.pdf' },
-        { name: 'EEA-ESEM Congress', year: '2023', by: 'Luca', url: 'https://eea-esem-congresses.org/node/85503' },
-        { name: '2nd SASCA PhD Conference', year: '2022', by: 'Miriam', url: 'https://www.unive.it/web/fileadmin/user_upload/eventi/SasCa/doc/Programma_SASCA_2022.pdf' },
       ],
     },
   ];
@@ -725,10 +746,10 @@ function renderTeaching() {
     { term: 'Fall 2024 & 2025', title: 'Quantitative Methods in Sports', role: 'Teaching Assistant · University of Zurich' },
   ];
   const lectures = [
-    { term: 'Spring & Fall 2025', title: 'Current Socio-Economic Issues and Challenges in Sports', role: 'Invited Lecture · University of Lausanne' },
+    { term: 'Spring & Fall 2025, Fall 2026', title: 'Current Socio-Economic Issues and Challenges in Sports', role: 'Invited Lecture · University of Lausanne' },
   ];
   const theses = [
-    'Sebastian Lutz', 'Yihao Bian', 'Lin Qing', 'Zhaosong Li', 'Sarujan Beemsing',
+    'Sebastian Lutz', 'Yihao Bian', 'Lin Qing', 'Zhaosong Li', 'Sarujan Beemsing', 'Lorenzo Falliti',
   ];
 
   return `
@@ -775,7 +796,7 @@ function renderTeaching() {
         <div class="ornament"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
       </div>
       <section style="padding:56px 0 96px; text-align:center">
-        <div style="max-width:680px; margin:0 auto; font-size:20px; line-height:2; color:var(--ink)">
+        <div style="max-width:860px; margin:0 auto; font-size:20px; line-height:2; color:var(--ink)">
           ${theses.map(n => `<span style="white-space:nowrap">${n}</span>`).join(' <span style="color:var(--muted); margin:0 12px">·</span> ')}
         </div>
       </section>
