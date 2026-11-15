@@ -621,6 +621,7 @@ function renderResearch() {
       title: 'Can AI Bridge the Gender Gap in Sports? Evidence from YouTube and Online Experiments',
       authors: 'Yu Pan, Laurel Walzak, Carlos Gomez-Gonzalez, Helmut M. Dietl',
       talks: [
+        { name: 'Peking University, School of Economics, Digital Economy Workshop', year: '2026', scheduled: true },
         { name: 'University of Lausanne, Institute of Sports Sciences Seminar', year: '2026', url: 'https://www.unil.ch/events/en/1793111055263' },
         { name: '34th European Association for Sport Management Conference', year: '2026', url: 'https://www.easm2026.com/sites/default/files/2026-09/program-16.9-3.pdf' },
         { name: '17th ESEA Conference on Sport Economics', year: '2026', url: 'https://www.crsa.uzh.ch/dam/jcr:d92c31af-526a-4601-912c-e95b070bde12/ESEA_Conference_2026_Zurich_Program.pdf' },
@@ -630,6 +631,8 @@ function renderResearch() {
       title: 'Why Does Imported Talent Hold the Central Roles in China, but Not in Japan or Korea?',
       authors: 'Yu Pan, Marco Henriques Pereira',
       talks: [
+        { name: 'China Young Economists Forum, Central University of Finance and Economics', year: '2026', scheduled: true },
+        { name: '6th Camphor Sports Economics Forum, Beijing Sport University', year: '2026', scheduled: true },
         { name: 'AMD Publishing and Paper Development Workshop', year: '2025', url: 'https://www.aom.org/event/amd-publishing-and-paper-development-workshop-zurich-switzerland/' },
         { name: '16th ESEA Conference on Sport Economics', year: '2025', url: 'https://www.uibk.ac.at/media/filer_public/c2/29/c229fe28-dbdb-4b6b-8696-0441d0f83bf5/esea_innsbruck_2025_book_of_abstract.pdf' },
         { name: '2nd Workshop on Sports, Economics, and Natural Experiments', year: '2025', url: 'https://www.crsa.uzh.ch/dam/jcr:37dffd84-ea9e-488c-b092-80f369073b63/SENE_Workshop_2025_Program_Zurich.pdf' },
@@ -701,7 +704,7 @@ function renderResearch() {
         ${p.note ? `<div class="pub-venue">${p.note}</div>` : ''}
       </div>
       <div class="pub-right">${p.talks ? `<button type="button" class="talks-toggle" aria-expanded="false" aria-controls="talks-${i}" onclick="toggleTalks(this)">Presented<span class="caret" aria-hidden="true">▾</span></button>` : ''}</div>
-      ${p.talks ? `<div class="pub-talks" id="talks-${i}" hidden>${p.talks.map(t => `<div>${t.url ? `<a href="${t.url}" target="_blank" rel="noopener">${t.name}</a>` : t.name}, ${t.year}${t.by ? ` (${t.by})` : ''}</div>`).join('')}</div>` : ''}
+      ${p.talks ? `<div class="pub-talks" id="talks-${i}" hidden>${p.talks.map(t => `<div>${t.url ? `<a href="${t.url}" target="_blank" rel="noopener">${t.name}</a>` : t.name}, ${t.year}${t.by ? ` (${t.by})` : ''}${t.scheduled ? ' (scheduled)' : ''}</div>`).join('')}</div>` : ''}
     </div>
   `;
 
